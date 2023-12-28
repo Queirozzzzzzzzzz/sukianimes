@@ -2,7 +2,10 @@
   "name": "sukianimes",
   "version": "1.0.0",
   "description": "Anime-focused video streaming system",
-  "main": "index.js",
+  "main": "app.js",
+  "engines": {
+    "Node": "20.x"
+  },
   "scripts": {
     "start": "nodemon app.js"
   },
