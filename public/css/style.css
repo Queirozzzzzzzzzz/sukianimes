@@ -267,7 +267,6 @@ ul {
         z-index: 10;
         position: fixed;
         width: 100vw;
-
     }
 
     .header {
@@ -277,12 +276,21 @@ ul {
 
     .header #menu {
         position: absolute;
-        top: .8em;
-        right: .5em;
     }
 
     .header #menu img {
-        width: 3em;
+        height: 10vh;
+        right: -2.5vw;
+    }
+
+    .header .logo {
+        display: block;
+        height: 100%;
+        margin-top: 1vh;
+    }
+
+    .header .logo img {
+        height: 100%;
     }
 
     .navbar-items {
@@ -304,7 +312,7 @@ ul {
 
     #navbar-item img {
         display: block;
-        width: 10%;
+        width: 10vw;
     }
 
     /* LANDING PAGE */
