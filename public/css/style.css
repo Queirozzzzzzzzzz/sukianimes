@@ -116,7 +116,7 @@ ul {
 }
 
 #navbar-item {
-    padding: 1em;
+    padding: 1.5em;
     font-size: 1.2em;
 }
 
@@ -242,10 +242,12 @@ ul {
 
 .float-left {
     float: left;
+    height: 100%;
 }
 
 .float-right {
     float: right;
+    height: 100%;
 }
 
 .unselectable {
@@ -280,16 +282,11 @@ ul {
 
     .header #menu img {
         height: 10vh;
-        right: -2.5vw;
+        right: -4vw;
     }
 
     .header .logo {
         display: block;
-        height: 100%;
-        margin-top: 1vh;
-    }
-
-    .header .logo img {
         height: 100%;
     }
 
@@ -335,7 +332,7 @@ ul {
         position: absolute;
         font-size: 3em;
         max-width: 75vw;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     .news button {
@@ -372,6 +369,12 @@ ul {
 
 /* Medium devices */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    /* BASE */
+
+    header {
+        height: 19vh;
+    }
 
     /* LANDING PAGE */
 
@@ -460,10 +463,19 @@ ul {
 
 
 /* Largest devices */
-@media only screen and (min-width: 1500px) {}
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+    
+}
+
+/* Very Largest devices */
+@media only screen and (min-width: 1800px) {
+    header {
+        height: 8vh;
+    }
+}
 
 /* Largest devices rotation */
-@media only screen and (min-height: 1500px) {
+@media only screen and (min-height: 1366px) {
     header {
         height: 5vh;
     }
