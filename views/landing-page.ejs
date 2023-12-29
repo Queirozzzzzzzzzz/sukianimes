@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>SukiAnimes</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/base.js"></script>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="navbar">
+        <header id="landing-page-header">
+            <div class="header">
                 <div class="float-left">
                     <a href="/" class="logo">
                         <img src="img/logo.png">
@@ -18,14 +20,18 @@
                     </a>
                 </div>
                 <div class="float-right">
-                    <a href="login" id="navbar-item">Login</a>
-                    <a href="catalogue" id="navbar-item">Catálogo</a>
+                    <nav class="navbar">
+                        <ul class="navbar-items">
+                            <a href="login" id="navbar-item"><img src="svg/login.svg"><li>Login</li></a>
+                            <a href="/" id="navbar-item"><img src="svg/home.svg"><li>Início</li></a>
+                        </ul>
+                        <div href="" id="menu"><img src="svg/menu.svg"></div>
+                    </nav>
                 </div>
             </div>
         </header>
         <main>
             <div class="news">
-                <img class="unselectable" src="img/landing-page-banner.png">
                 <h1 class="unselectable">Os Seus Animes Favoritos Em Um Só Lugar</h1>
                 <button>Teste Gratuito</button>
             </div>

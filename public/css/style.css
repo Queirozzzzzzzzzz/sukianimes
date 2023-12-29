@@ -27,7 +27,7 @@ body {
 
 header {
     background-color: var(--purple-base);
-    height: 5em;
+    height: 10vh;
 }
 
 button {
@@ -53,15 +53,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
     right: 0;
     bottom: 0;
     left: 0;
-    text-align: center;
 }
 
 main {
     flex: 1;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .container {
@@ -70,26 +74,31 @@ main {
     height: 100%;
 }
 
-.navbar {
+.header {
     height: 100%;
-    width: 10%;
     margin-right: 5em;
     text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 90vw;
     margin-left: 5%;
 }
 
-.navbar .logo {
+.header #menu img {
+    position: absolute;
+    width: 3em;
+    top: 1.7%;
+    right: 1em;
+}
+
+.header .logo {
     align-items: center;
 }
 
-.navbar .logo img{
+.header .logo img {
     width: 4em;
     border-radius: 50%;
     margin-top: .3em;
@@ -101,10 +110,18 @@ main {
     margin-bottom: .5em;
 }
 
+
+.navbar-items {
+    display: none;
+}
+
 #navbar-item {
     padding: 1em;
     font-size: 1.2em;
-    font-weight: bold;
+}
+
+#navbar-item img {
+    display: none;
 }
 
 #navbar-item:hover {
@@ -113,8 +130,17 @@ main {
 
 /* LANDING PANGE */
 
+#landing-page-header #menu {
+    display: none;
+}
+
+#landing-page-header .navbar-items {
+    display: flex;
+}
+
 .news {
     background-color: var(--gray-second);
+    background-image: url('/img/landing-page-banner.png');
     width: 100%;
     height: 75vh;
     display: flex;
@@ -138,9 +164,10 @@ main {
 
 .product-comparison {
     background-color: var(--gray-second);
-    height: 100vh;
     display: flex;
     justify-content: center;
+    padding-bottom: 5em;
+    height: auto;
 }
 
 .product-comparison h1 {
@@ -153,17 +180,20 @@ main {
     background-color: var(--gray-base);
     position: relative;
     width: 20%;
-    height: 75%;
-    top: 15%;
-    margin: 0 1em 0 1em;
+    height: 80%;
+    margin: 10em 1em 0 1em;
     display: block;
     justify-content: center;
     text-align: center;
     border-radius: 3px;
 }
 
+.product ul {
+    text-align: left;
+}
+
 .product img {
-    height: 15%;
+    width: 35%;
     margin: 1em;
 }
 
@@ -187,10 +217,6 @@ main {
     color: gray;
 }
 
-.product ul {
-    list-style-type: none;
-}
-
 .product ul img {
     width: 5%;
 }
@@ -204,6 +230,14 @@ main {
 
 .no-display {
     display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-flex {
+    display: flex;
 }
 
 .float-left {
@@ -220,4 +254,214 @@ main {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+}
+
+/* RESPONSIVE */
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+
+    /* BASE */
+
+    header {
+        z-index: 10;
+        position: fixed;
+        width: 100vw;
+
+    }
+
+    .header {
+        margin: 0em .5em 0em .5em;
+        display: block;
+    }
+
+    .header #menu {
+        position: absolute;
+        top: .8em;
+        right: .5em;
+    }
+
+    .header #menu img {
+        width: 3em;
+    }
+
+    .navbar-items {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        font-size: 1.25em;
+        background-color: var(--gray-base);
+    }
+
+    #navbar-item {
+        display: flex;
+        font-size: 2em;
+        text-align: center;
+        padding: .2em;
+    }
+
+    #navbar-item img {
+        display: block;
+        width: 10%;
+    }
+
+    /* LANDING PAGE */
+
+    #landing-page-header #menu {
+        display: block;
+    }
+
+    #landing-page-header .navbar-items {
+        display: none;
+    }
+
+    .news {
+        background-image: url('/img/landing-page-banner-mobile.png');
+        background-size: cover;
+        height: 67vh;
+    }
+
+    .news h1 {
+        position: absolute;
+        font-size: 3em;
+        max-width: 75vw;
+        margin-bottom: 2em;
+    }
+
+    .news button {
+        margin-top: 15em;
+    }
+
+    .product-comparison {
+        display: block;
+        padding-top: 1em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .product-comparison h1 {
+        position: relative;
+    }
+
+    .product {
+        width: 95vw;
+        margin: 2.5vw;
+    }
+
+    .product button {
+        margin: 0;
+    }
+
+    .product img {
+        width: 25vw;
+    }
+
+
+}
+
+
+/* Medium devices */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    /* LANDING PAGE */
+
+    .news h1 {
+        font-size: 3em;
+        width: 75vw;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .product-comparison {
+        display: block;
+        padding-top: 1em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .product-comparison {
+        display: block;
+        padding-top: 1em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .product-comparison h1 {
+        position: relative;
+    }
+
+    .product {
+        width: 95vw;
+        margin: 2.5vw;
+    }
+
+    .product button {
+        margin: 0;
+    }
+
+    .product img {
+        width: 25vw;
+    }
+}
+
+
+/* Large devices */
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+
+    /* LANDING PAGE */
+
+    .news {
+        background-image: url('/img/landing-page-banner-mobile.png');
+        background-size: cover;
+    }
+
+    .news h1 {
+        font-size: 3em;
+        width: 75vw;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+    .product-comparison {
+        display: block;
+        padding-top: 1em;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .product-comparison h1 {
+        position: relative;
+    }
+
+    .product {
+        width: 95vw;
+        margin: 2.5vw;
+    }
+
+    .product button {
+        margin: 0;
+    }
+
+    .product img {
+        width: 25vw;
+    }
+
+}
+
+
+/* Largest devices */
+@media only screen and (min-width: 1500px) {}
+
+/* Largest devices rotation */
+@media only screen and (min-height: 1500px) {
+    header {
+        height: 5vh;
+    }
+
+    .news {
+        height: 50vh;
+        background-size: contain;
+    }
 }
