@@ -27,6 +27,8 @@ body {
 
 header {
   background-color: var(--purple-base);
+  width: 100vw;
+  z-index: 10;
 }
 
 button {
@@ -44,6 +46,7 @@ button:hover {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 footer {
