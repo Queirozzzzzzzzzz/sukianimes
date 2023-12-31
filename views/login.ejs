@@ -7,38 +7,60 @@
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="js/base.js"></script>
+    <script src="js/tecnical-form.js"></script>
   </head>
   <body>
-    <header>
-      <div class="header">
-        <div class="float-left">
-          <a href="/" class="logo">
-            <img src="img/logo.png" />
-            <img id="logo-text" src="img/logo-text.png" />
-          </a>
-        </div>
-        <div class="float-right">
-          <nav class="navbar">
-            <ul class="navbar-items">
-              <a href="login" id="navbar-item"
-                ><img src="svg/login.svg" />
-                <li>Login</li></a
-              >
-              <a href="/" id="navbar-item"
-                ><img src="svg/home.svg" />
-                <li>Início</li></a
-              >
-            </ul>
+    <div class="form-page-container">
+      <header>
+        <div class="header">
+          <div class="float-left">
+            <a href="/" class="logo">
+              <img src="img/logo.png" />
+              <img id="logo-text" src="img/logo-text.png" />
+            </a>
+          </div>
+          <div class="float-right">
             <div href="" id="menu"><img src="svg/menu.svg" /></div>
-          </nav>
+          </div>
         </div>
-      </div>
-    </header>
-    <footer>
-      <a
-        onclick="window.open('https://github.com/Queirozzzzzzzzzz?tab=repositories', '_blank');"
-        >Queirozzzzzzzzzz</a
-      >
-    </footer>
+        <nav class="navbar">
+          <ul class="navbar-items">
+            <a href="login" id="navbar-item"
+              ><img src="svg/login.svg" />
+              <li>Login</li></a
+            >
+            <a href="/" id="navbar-item"
+              ><img src="svg/home.svg" />
+              <li>Início</li></a
+            >
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="form-container" id="login-form">
+          <form action="" method="post" id="tecnical">
+            <h1>LOGIN</h1>
+            <div class="form-group">
+              <input type="text" id="email" name="email" />
+              <label for="email" class="coe">Email</label>
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" name="password" />
+              <label for="password">Senha</label>
+            </div>
+            <button type="submit">Entrar</button>
+            <div class="form-group">
+              <a href="">Esqueci a senha</a>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <a
+          onclick="window.open('https://github.com/Queirozzzzzzzzzz?tab=repositories', '_blank');"
+          >Queirozzzzzzzzzz</a
+        >
+      </footer>
+    </div>
   </body>
 </html>

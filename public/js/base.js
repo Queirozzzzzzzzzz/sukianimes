@@ -1,7 +1,6 @@
 window.onload = function () {
   const menuItem = document.querySelector("#menu");
   const navbarItems = document.querySelector(".navbar-items");
-  const header = document.querySelector("header");
 
   // Activate or deactivate navbar items
   function toggleNavbarItems() {
@@ -9,11 +8,9 @@ window.onload = function () {
       navbarItems.style.display === "none" ||
       navbarItems.style.display == ""
     ) {
-      navbarItems.style.display = "block";
-      header.style.position = "fixed";
+      navbarItems.style.display = "flex";
     } else {
       navbarItems.style.display = "none";
-      header.style.position = "absolute";
     }
   }
 
