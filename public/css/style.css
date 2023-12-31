@@ -252,6 +252,7 @@ input:-webkit-autofill {
 .form-container {
   height: 100%;
   background-color: var(--gray-base);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -260,8 +261,10 @@ input:-webkit-autofill {
 
 #login-form {
   background-image: url("/img/login-background-image.png");
-  background-blend-mode: difference;
-  background-size: cover;
+}
+
+#register-form {
+  background-image: url("/img/register-background-image.png");
 }
 
 .form-group {
@@ -274,8 +277,8 @@ input:-webkit-autofill {
   background-color: var(--gray-second);
   padding: 1em;
   border-radius: 5px;
-  width: 25%;
-  height: 50%;
+  width: 25vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -468,7 +471,6 @@ input:-webkit-autofill {
 
   #tecnical {
     width: 75vw;
-    height: 75vw;
   }
 
   #tecnical h1 {
@@ -493,13 +495,6 @@ input:-webkit-autofill {
 
   .news h1 {
     font-size: 3em;
-  }
-
-  /* TECNICAL FORM */
-  #tecnical {
-    width: 45%;
-    height: 80%;
-    margin: 0.5em;
   }
 
   .product-comparison {
@@ -531,6 +526,13 @@ input:-webkit-autofill {
 
   .product img {
     width: 25vw;
+  }
+
+  /* TECNICAL FORM */
+  #tecnical {
+    width: 45vw;
+    height: 60vh;
+    margin: 1em;
   }
 }
 
@@ -573,7 +575,6 @@ input:-webkit-autofill {
   /* TECNICAL FORM */
   #tecnical {
     width: 35vw;
-    height: 40vh;
     margin: 0.5em;
   }
 }
@@ -597,7 +598,7 @@ input:-webkit-autofill {
   /* TECNICAL FORM */
   #tecnical {
     width: 45%;
-    height: 25vh;
+    height: 30vh;
     margin: 0.5em;
   }
 }
