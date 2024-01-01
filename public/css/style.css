@@ -536,6 +536,15 @@ input:-webkit-autofill {
   }
 }
 
+/* Small devices rotation */
+@media only screen and (max-height: 380px) {
+  /* BASE */
+
+  footer {
+    display: none;
+  }
+}
+
 /* Large devices */
 @media only screen and (min-width: 901px) and (max-width: 1200px) {
   /* LANDING PAGE */
