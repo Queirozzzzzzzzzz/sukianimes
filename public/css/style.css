@@ -70,6 +70,7 @@ footer a {
 }
 
 .logo-container,
+.logo-container a,
 .navbar-container {
   height: 100%;
   display: flex;
@@ -86,9 +87,17 @@ footer a {
   border-radius: 50%;
 }
 
+.navbar-container img {
+  cursor: pointer;
+}
+
 #navbar-icon {
   height: 100%;
-  margin-right: 100%;
+}
+
+#search-icon {
+  height: 35%;
+  margin: 1em;
 }
 
 #navbar-icon:hover,
@@ -126,8 +135,22 @@ footer a {
   padding: 1em;
 }
 
+.navbar-items a:hover {
+  background-color: var(--gray-base);
+}
+
 .navbar-items a p {
   padding-left: 1em;
+}
+
+.navbar-section button {
+  background-color: var(--purple-base);
+  border: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25em;
+  width: 100%;
+  height: 5vh;
 }
 
 .navbar-section img {
@@ -151,7 +174,7 @@ footer a {
     position: fixed;
     right: 0vw;
     width: 100vw;
-    height: 100%;
+    height: 92vh;
     overflow-y: scroll;
   }
 
@@ -163,12 +186,18 @@ footer a {
 /* Tablet styles */
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  footer,
+  header {
+    height: 12vh;
+  }
+
   .navbar-items {
     z-index: 10;
     position: fixed;
     right: 0vw;
+    top: 12vh;
     width: 100vw;
-    height: 100%;
+    height: 87vh;
     overflow-y: scroll;
   }
 
@@ -178,6 +207,10 @@ footer a {
 
   .navbar-section img {
     height: 3vw;
+  }
+
+  .navbar-section button {
+    height: 5vw;
   }
 
   .navbar-items .profile-picture img {
@@ -205,7 +238,7 @@ footer a {
     z-index: 10;
     position: fixed;
     width: 100vw;
-    height: 100%;
+    height: 92vh;
     right: 0;
     overflow-y: scroll;
   }

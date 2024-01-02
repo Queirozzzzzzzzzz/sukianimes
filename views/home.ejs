@@ -9,19 +9,25 @@
   <body>
     <header>
       <div class="logo-container float-left">
-        <img src="img/logo.png" alt="Logo" id="logo" />
-        <img src="img/logo-text.png" alt="Logo Text" id="logo-text" />
+        <a href="/">
+          <img src="img/logo.png" id="logo" />
+          <img src="img/logo-text.png" id="logo-text" />
+        </a>
       </div>
       <div class="navbar-container float-right">
-        <img id="navbar-icon" src="svg/menu.svg" alt="" />
+        <img id="search-icon" src="svg/search.svg" />
+        <img id="navbar-icon" src="svg/menu.svg" />
       </div>
     </header>
     <nav class="navbar-items">
       <ul>
         <li class="navbar-section">
           <a href="profile" class="profile-picture">
-            <img src="/img/logo.png" />
-            <p>Nome de Usuário</p>
+            <img src="img/logo.png" />
+            <p>Username</p>
+          </a>
+          <a href="landing-page" class="navbar-item">
+            <button>Upgrade</button>
           </a>
         </li>
         <li class="navbar-section">
@@ -29,11 +35,15 @@
             ><img src="svg/login.svg" />
             <p>Login</p></a
           >
+          <a href="register" id="navbar-item"
+            ><img src="svg/register.svg" />
+            <p>Sign up</p></a
+          >
         </li>
         <li class="navbar-section">
           <a href="/" id="navbar-item"
             ><img src="svg/watchlater.svg" />
-            <p>Assistir mais tarde</p></a
+            <p>Watch Later</p></a
           >
           <a href="/" id="navbar-item"
             ><img src="svg/playlist.svg" />
@@ -41,23 +51,23 @@
           >
           <a href="/" id="navbar-item"
             ><img src="svg/history.svg" />
-            <p>Histórico</p></a
+            <p>History</p></a
           >
         </li>
         <li class="navbar-section">
-          <a href="/" id="navbar-item"
+          <a href="profile" id="navbar-item"
             ><img src="svg/account.svg" />
-            <p>Minha Conta</p></a
+            <p>My Account</p></a
           >
-          <a href="/" id="navbar-item"
+          <a href="news" id="navbar-item"
             ><img src="svg/news.svg" />
-            <p>Novidades</p></a
+            <p>News</p></a
           >
         </li>
         <li class="navbar-section">
-          <a href="/" id="navbar-item"
+          <a href="logout" id="navbar-item"
             ><img src="svg/logout.svg" />
-            <p>Sair</p></a
+            <p>Leave</p></a
           >
         </li>
       </ul>
