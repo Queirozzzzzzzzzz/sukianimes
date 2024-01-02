@@ -69,6 +69,19 @@ footer a {
   font-size: 2vh;
 }
 
+button {
+  background-color: var(--purple-base);
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  filter: contrast(125%);
+}
+
+/* NAVBAR */
+
 .logo-container,
 .logo-container a,
 .navbar-container {
@@ -144,9 +157,6 @@ footer a {
 }
 
 .navbar-section button {
-  background-color: var(--purple-base);
-  border: none;
-  cursor: pointer;
   font-family: "Lato", sans-serif;
   font-size: 1.25em;
   width: 100%;
@@ -165,10 +175,80 @@ footer a {
   border-radius: 50%;
 }
 
+/* LANDING PAGE */
+
+.landing-page.products-container,
+.landing-page.banner {
+  display: flex;
+  background-color: var(--gray-second);
+  height: calc(100vh / 1.5);
+  background-size: cover;
+}
+
+.landing-page.banner {
+  background-image: url("/img/landing-page-banner.png");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-page.banner button {
+  width: 15vw;
+  height: 5vh;
+}
+
+.landing-page.banner h1 {
+  font-size: 4em;
+}
+
+.landing-page.products-container {
+  padding: 5vh 15vw 5vh 15vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3vw;
+}
+
+.landing-page .product {
+  background-color: var(--gray-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page .product button {
+  width: 50%;
+  height: 5vh;
+}
+
+.landing-page .product a {
+  margin: 1em;
+}
+
+.landing-page .product img {
+  height: 10vh;
+}
+
+.landing-page .product li {
+  display: flex;
+  padding: 1rem;
+}
+
+.landing-page .product li p {
+  padding-left: 0.5em;
+}
+
+.landing-page .product li img {
+  height: 3vh;
+}
+
 /* RESPONSIVE */
 
 /* Mobile styles */
 @media screen and (max-width: 600px) {
+  /* NAVBAR */
+
   .navbar-items {
     z-index: 10;
     position: fixed;
@@ -181,15 +261,53 @@ footer a {
   .navbar-section {
     width: 95vw;
   }
+
+  /* LANDING PAGE */
+
+  .landing-page.banner {
+    background-image: url("/img/landing-page-banner-mobile.png");
+  }
+
+  .landing-page.banner button {
+    width: 35vw;
+    height: 12vw;
+  }
+
+  .landing-page.banner h1 {
+    font-size: 12vw;
+  }
+
+  .landing-page.products-container {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page.products-container .product {
+    margin: 1em;
+  }
+
+  .landing-page .product button {
+    height: 15vw;
+  }
 }
 
 /* Tablet styles */
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* BASE */
+
   footer,
   header {
     height: 12vh;
   }
+
+  footer a {
+    font-size: 2vw;
+  }
+
+  /* NAVBAR */
 
   .navbar-items {
     z-index: 10;
@@ -216,11 +334,39 @@ footer a {
   .navbar-items .profile-picture img {
     height: 8vw;
   }
+
+  /* LANDING PAGE */
+
+  .landing-page.banner button {
+    width: 20vw;
+    height: 8vw;
+  }
+
+  .landing-page.banner h1 {
+    font-size: 5vw;
+  }
+
+  .landing-page.products-container {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page.products-container .product {
+    margin: 1em 10em 1em 10em;
+  }
+
+  .landing-page .product button {
+    height: 15vh;
+  }
 }
 
 /* Notebook styles */
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* NAVBAR */
+
   .navbar-items {
     width: 25vw;
     right: 7vw;
@@ -234,6 +380,17 @@ footer a {
 /* 90° desktop styles */
 
 @media screen and (min-height: 1920px) {
+  /* NAVBAR */
+
+  #navbar-icon {
+    height: 50%;
+  }
+
+  #search-icon {
+    height: 20%;
+    margin: 1em;
+  }
+
   .navbar-items {
     z-index: 10;
     position: fixed;
@@ -245,6 +402,31 @@ footer a {
 
   .navbar-section {
     width: 95vw;
+  }
+
+  /* LANDING PAGE */
+
+  .landing-page.banner {
+    background-image: url("/img/landing-page-banner-mobile.png");
+  }
+
+  .landing-page.banner h1 {
+    font-size: 2.5em;
+  }
+
+  .landing-page.products-container {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page.products-container .product {
+    margin: 1em 10em 1em 10em;
+  }
+
+  .landing-page .product button {
+    height: 5vw;
   }
 }
 
