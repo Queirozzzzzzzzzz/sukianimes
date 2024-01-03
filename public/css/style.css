@@ -189,41 +189,41 @@ input:-webkit-autofill {
   border-radius: 50%;
 }
 
-/* LANDING PAGE */
+/* OFFER UPGRADE */
 
-.landing-page.products-container,
-.landing-page.banner {
+.offer-upgrade.products-container,
+.offer-upgrade.banner {
   display: flex;
   background-color: var(--gray-second);
   min-height: calc(100vh / 1.5);
   background-size: cover;
 }
 
-.landing-page.banner {
-  background-image: url("/img/landing-page-banner.png");
+.offer-upgrade.banner {
+  background-image: url("/img/offer-upgrade-banner.png");
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.landing-page.banner button {
+.offer-upgrade.banner button {
   width: 15vw;
   height: 5vh;
 }
 
-.landing-page.banner h1 {
+.offer-upgrade.banner h1 {
   font-size: 4em;
 }
 
-.landing-page.products-container {
+.offer-upgrade.products-container {
   padding: 5vh 15vw 5vh 15vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3vw;
 }
 
-.landing-page .product {
+.offer-upgrade .product {
   background-color: var(--gray-base);
   display: flex;
   flex-direction: column;
@@ -231,29 +231,29 @@ input:-webkit-autofill {
   align-items: center;
 }
 
-.landing-page .product button {
+.offer-upgrade .product button {
   width: 50%;
   height: 5vh;
 }
 
-.landing-page .product a {
+.offer-upgrade .product a {
   margin: 1em;
 }
 
-.landing-page .product img {
+.offer-upgrade .product img {
   height: 10vh;
 }
 
-.landing-page .product li {
+.offer-upgrade .product li {
   display: flex;
   padding: 1rem;
 }
 
-.landing-page .product li p {
+.offer-upgrade .product li p {
   padding-left: 0.5em;
 }
 
-.landing-page .product li img {
+.offer-upgrade .product li img {
   height: 3vh;
 }
 
@@ -328,6 +328,29 @@ input:-webkit-autofill {
   width: 50%;
 }
 
+/* HOME */
+
+.home-preview {
+  background-color: var(--gray-second);
+  width: 100vw;
+  margin-top: 1vh;
+}
+
+.home-preview.banner-carousel {
+  height: calc(100vh / 1.5);
+}
+
+.home-preview.suggestions,
+.home-preview.aired-today {
+  height: calc(100vh / 2);
+}
+
+.home-preview.recently-added,
+.home-preview.watch-list,
+.home-preview.keep-watching {
+  height: calc(100vh / 3);
+}
+
 /* RESPONSIVE */
 
 /* Mobile styles */
@@ -347,33 +370,33 @@ input:-webkit-autofill {
     width: 95vw;
   }
 
-  /* LANDING PAGE */
+  /* OFFER UPGRADE */
 
-  .landing-page.banner {
-    background-image: url("/img/landing-page-banner-mobile.png");
+  .offer-upgrade.banner {
+    background-image: url("/img/offer-upgrade-banner-mobile.png");
   }
 
-  .landing-page.banner button {
+  .offer-upgrade.banner button {
     width: 35vw;
     height: 12vw;
   }
 
-  .landing-page.banner h1 {
+  .offer-upgrade.banner h1 {
     font-size: 12vw;
   }
 
-  .landing-page.products-container {
+  .offer-upgrade.products-container {
     padding: 0;
     height: auto;
     display: flex;
     flex-direction: column;
   }
 
-  .landing-page.products-container .product {
+  .offer-upgrade.products-container .product {
     margin: 1em;
   }
 
-  .landing-page .product button {
+  .offer-upgrade .product button {
     height: 15vw;
   }
 
@@ -426,29 +449,29 @@ input:-webkit-autofill {
     height: 8vw;
   }
 
-  /* LANDING PAGE */
+  /* OFFER UPGRADE */
 
-  .landing-page.banner button {
+  .offer-upgrade.banner button {
     width: 20vw;
     height: 8vw;
   }
 
-  .landing-page.banner h1 {
+  .offer-upgrade.banner h1 {
     font-size: 5vw;
   }
 
-  .landing-page.products-container {
+  .offer-upgrade.products-container {
     padding: 0;
     height: auto;
     display: flex;
     flex-direction: column;
   }
 
-  .landing-page.products-container .product {
+  .offer-upgrade.products-container .product {
     margin: 1em 10em 1em 10em;
   }
 
-  .landing-page .product button {
+  .offer-upgrade .product button {
     height: 15vh;
   }
 
@@ -508,28 +531,28 @@ input:-webkit-autofill {
     width: 95vw;
   }
 
-  /* LANDING PAGE */
+  /* OFFER UPGRADE */
 
-  .landing-page.banner {
-    background-image: url("/img/landing-page-banner-mobile.png");
+  .offer-upgrade.banner {
+    background-image: url("/img/offer-upgrade-banner-mobile.png");
   }
 
-  .landing-page.banner h1 {
+  .offer-upgrade.banner h1 {
     font-size: 2.5em;
   }
 
-  .landing-page.products-container {
+  .offer-upgrade.products-container {
     padding: 0;
     height: auto;
     display: flex;
     flex-direction: column;
   }
 
-  .landing-page.products-container .product {
+  .offer-upgrade.products-container .product {
     margin: 1em 10em 1em 10em;
   }
 
-  .landing-page .product button {
+  .offer-upgrade .product button {
     height: 5vw;
   }
 

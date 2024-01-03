@@ -18,8 +18,8 @@ app.get("", (req, res) => {
   res.render("home");
 });
 
-app.get("/landing-page", (req, res) => {
-  res.render("landing-page");
+app.get("/offer-upgrade", (req, res) => {
+  res.render("offer-upgrade");
 });
 
 app.get("/login", (req, res) => {
