@@ -181,7 +181,7 @@ button:hover {
 .landing-page.banner {
   display: flex;
   background-color: var(--gray-second);
-  height: calc(100vh / 1.5);
+  min-height: calc(100vh / 1.5);
   background-size: cover;
 }
 
