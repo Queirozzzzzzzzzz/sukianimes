@@ -264,8 +264,16 @@ input:-webkit-autofill {
   align-items: center;
 }
 
+.login-form {
+  background-image: url("/img/login-background-image.png");
+}
+
+.register-form {
+  background-image: url("/img/register-background-image.png");
+}
+
 .tecnical-form form {
-  background-color: var(--gray-second);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 50%;
   min-height: 100vh;
   display: flex;
@@ -293,7 +301,7 @@ input:-webkit-autofill {
   margin-top: 5%;
   background-color: rgba(0, 0, 0, 0);
   border: none;
-  border-bottom: 0.1vh solid var(--gray-third);
+  border-bottom: 0.1vh solid var(--gray-forth);
   font-size: 1em;
 }
 
@@ -304,7 +312,6 @@ input:-webkit-autofill {
 
 .tecnical-form label {
   position: absolute;
-  color: var(--gray-forth);
   margin-bottom: 1em;
 }
 
