@@ -36,7 +36,8 @@ body {
 
 main {
   flex: 1;
-  overflow: auto;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 ul {
@@ -78,6 +79,17 @@ button {
 
 button:hover {
   filter: contrast(125%);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--gray-second) inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white-base) !important;
 }
 
 /* NAVBAR */
@@ -129,12 +141,12 @@ button:hover {
   background-color: var(--gray-second);
 }
 
-.navbar-items ul {
-  justify-content: center;
-}
-
 .navbar-items.active {
   display: flex;
+}
+
+.navbar-items ul {
+  justify-content: center;
 }
 
 .navbar-section {
@@ -243,6 +255,70 @@ button:hover {
   height: 3vh;
 }
 
+/* TECNICAL FORM */
+
+.tecnical-form.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnical-form form {
+  background-color: var(--gray-second);
+  width: 50%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.1em;
+  padding: 1em;
+}
+
+.tecnical-form .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 5% 0 0 50%;
+}
+
+.tecnical-form h1 {
+  font-size: 3em;
+}
+
+.tecnical-form input {
+  width: 50%;
+  height: 50%;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 0.1vh solid var(--gray-third);
+  font-size: 1em;
+}
+
+.tecnical-form input:focus {
+  outline: none;
+  border-color: var(--purple-base);
+}
+
+.tecnical-form label {
+  position: absolute;
+  color: var(--gray-forth);
+  margin-bottom: 1em;
+}
+
+.tecnical-form input:focus + label {
+  font-size: 1.5em;
+  color: var(--purple-second);
+}
+
+.tecnical-form button {
+  margin-top: 3em;
+  padding: 1em;
+  width: 50%;
+}
+
 /* RESPONSIVE */
 
 /* Mobile styles */
@@ -290,6 +366,12 @@ button:hover {
 
   .landing-page .product button {
     height: 15vw;
+  }
+
+  /* TECNICAL FORM */
+
+  .tecnical-form form {
+    width: 100%;
   }
 }
 
@@ -360,6 +442,12 @@ button:hover {
   .landing-page .product button {
     height: 15vh;
   }
+
+  /* TECNICAL FORM */
+
+  .tecnical-form form {
+    width: 100%;
+  }
 }
 
 /* Notebook styles */
@@ -374,6 +462,13 @@ button:hover {
 
   .navbar-section {
     width: 24vw;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1440px) {
+  .tecnical-form .form-group {
+    margin: 0 0 0 50%;
   }
 }
 
@@ -427,6 +522,12 @@ button:hover {
 
   .landing-page .product button {
     height: 5vw;
+  }
+
+  /* TECNICAL FORM */
+
+  .tecnical-form form {
+    width: 100%;
   }
 }
 

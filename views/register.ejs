@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SukiAnimes</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container float-left">
+        <a href="/">
+          <img src="img/logo.png" id="logo" />
+          <img src="img/logo-text.png" id="logo-text" />
+        </a>
+      </div>
+      <div class="navbar-container float-right">
+        <img id="search-icon" src="svg/search.svg" />
+        <img id="navbar-icon" src="svg/menu.svg" />
+      </div>
+    </header>
+    <nav class="navbar-items">
+      <ul>
+        <li class="navbar-section">
+          <a href="profile" class="profile-picture">
+            <img src="img/logo.png" />
+            <p>Username</p>
+          </a>
+          <a href="landing-page" class="navbar-item">
+            <button>Upgrade</button>
+          </a>
+        </li>
+        <li class="navbar-section">
+          <a href="login" id="navbar-item"
+            ><img src="svg/login.svg" />
+            <p>Login</p></a
+          >
+          <a href="register" id="navbar-item"
+            ><img src="svg/register.svg" />
+            <p>Sign up</p></a
+          >
+        </li>
+        <li class="navbar-section">
+          <a href="/" id="navbar-item"
+            ><img src="svg/home.svg" />
+            <p>Home</p></a
+          >
+          <a href="" id="navbar-item"
+            ><img src="svg/watchlater.svg" />
+            <p>Watch Later</p></a
+          >
+          <a href="" id="navbar-item"
+            ><img src="svg/playlist.svg" />
+            <p>Playlists</p></a
+          >
+          <a href="" id="navbar-item"
+            ><img src="svg/history.svg" />
+            <p>History</p></a
+          >
+        </li>
+        <li class="navbar-section">
+          <a href="profile" id="navbar-item"
+            ><img src="svg/account.svg" />
+            <p>My Account</p></a
+          >
+          <a href="news" id="navbar-item"
+            ><img src="svg/news.svg" />
+            <p>News</p></a
+          >
+        </li>
+        <li class="navbar-section">
+          <a href="logout" id="navbar-item"
+            ><img src="svg/logout.svg" />
+            <p>Leave</p></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="tecnical-form container">
+        <form action="" class="login-form">
+          <h1>Sign Up</h1>
+          <div class="form-group">
+            <input type="text" name="username" id="username" />
+            <label for="username">Username</label>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-group">
+            <input type="password" name="password-1" id="password-1" />
+            <label for="password-1">Password</label>
+          </div>
+          <div class="form-group">
+            <input type="password" name="password-2" id="password-2" />
+            <label for="password-2">Confirm Password</label>
+          </div>
+          <button>Enter</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <a
+        onclick="window.open('https://github.com/Queirozzzzzzzzzz?tab=repositories', '_blank');"
+        >Queirozzzzzzzzzz</a
+      >
+    </footer>
+    <script src="js/base.js"></script>
+    <script src="js/tecnical-form.js"></script>
+  </body>
+</html>
