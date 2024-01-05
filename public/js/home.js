@@ -64,3 +64,33 @@ contentDivs.forEach((contentDiv, i) => {
     }px)`;
   }
 });
+
+// Scroll to a specific element
+
+window.scrollToElement = function (className) {
+  var elmnts = document.getElementsByClassName(className);
+  if (elmnts.length > 0) {
+    // Check if any elements exist
+    elmnts[0].scrollIntoView({ behavior: "smooth", block: "center" });
+  } else {
+    console.log('Elements with class "' + className + '" not found');
+  }
+};
+
+// Select all elements with the class 'hidden-preview'
+let previews = document.querySelectorAll(".hidden-preview");
+
+// Loop through each selected element
+previews.forEach(function (preview) {
+  // Attach 'mouseover' event
+  preview.addEventListener("mouseover", function () {
+    // Add 'active' class when mouse hovers over the element
+    this.classList.add("active");
+  });
+
+  // Attach 'mouseout' event
+  preview.addEventListener("mouseout", function () {
+    // Remove 'active' class when mouse leaves the element
+    this.classList.remove("active");
+  });
+});

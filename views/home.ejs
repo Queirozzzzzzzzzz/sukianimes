@@ -3,10 +3,25 @@
   <!-- BANNER -->
   <div class="home-preview banner-carousel">
     <div class="carousel-image">
-      <img src="img/previews/home-preview-banner-carousel-1.webp" />
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          srcset="img/previews/home-preview-banner-carousel-mobile-1.webp"
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="img/previews/home-preview-banner-carousel-1.webp"
+        />
+        <img
+          id="background-img"
+          src="img/previews/home-preview-banner-carousel-1.webp"
+        />
+      </picture>
       <div class="carousel-content">
-        <h1>One Punch Man</h1>
-        <h2>ワンパンマン</h2>
+        <img
+          id="title-img"
+          src="img/previews/home-preview-banner-carousel-title-1.webp"
+        />
         <div class="interact">
           <button>
             <img src="svg/play.svg" />
@@ -17,22 +32,54 @@
       </div>
     </div>
     <div class="carousel-image">
-      <img src="img/previews/home-preview-banner-carousel-2.webp" />
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          srcset="img/previews/home-preview-banner-carousel-mobile-2.webp"
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="img/previews/home-preview-banner-carousel-2.webp"
+        />
+        <img
+          id="background-img"
+          src="img/previews/home-preview-banner-carousel-2.webp"
+        />
+      </picture>
       <div class="carousel-content">
-        <h1>Hunter x Hunter (2011)</h1>
+        <img
+          id="title-img"
+          src="img/previews/home-preview-banner-carousel-title-2.webp"
+        />
         <div class="interact">
           <button>
             <img src="svg/play.svg" />
-            <p>CONTINUE WATCHING S2 E14</p>
+            <p>CONTINUE WATCHING S1 E10</p>
           </button>
           <button id="big-icon"><img src="svg/bookmark.svg" /></button>
         </div>
       </div>
     </div>
     <div class="carousel-image">
-      <img src="img/previews/home-preview-banner-carousel-3.webp" />
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          srcset="img/previews/home-preview-banner-carousel-mobile-3.webp"
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="img/previews/home-preview-banner-carousel-3.webp"
+        />
+        <img
+          id="background-img"
+          src="img/previews/home-preview-banner-carousel-3.webp"
+        />
+      </picture>
       <div class="carousel-content">
-        <h1>Mob Psycho 100 III</h1>
+        <img
+          id="title-img"
+          src="img/previews/home-preview-banner-carousel-title-3.webp"
+        />
         <div class="interact">
           <button>
             <img src="svg/play.svg" />
@@ -43,14 +90,58 @@
       </div>
     </div>
     <div class="carousel-image">
-      <img src="img/previews/home-preview-banner-carousel-4.webp" />
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          srcset="img/previews/home-preview-banner-carousel-mobile-4.webp"
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="img/previews/home-preview-banner-carousel-4.webp"
+        />
+        <img
+          id="background-img"
+          src="img/previews/home-preview-banner-carousel-4.webp"
+        />
+      </picture>
       <div class="carousel-content">
-        <h1>Fumetsu No Anata e</h1>
-        <h2>不滅のあなたへ</h2>
+        <img
+          id="title-img"
+          src="img/previews/home-preview-banner-carousel-title-4.webp"
+        />
         <div class="interact">
           <button>
             <img src="svg/play.svg" />
-            <p>CONTINUE WATCHING S2 E1</p>
+            <p>WATCH S1 E1</p>
+          </button>
+          <button id="big-icon"><img src="svg/bookmark.svg" /></button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-image">
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          srcset="img/previews/home-preview-banner-carousel-mobile-5.webp"
+        />
+        <source
+          media="(min-width: 800px)"
+          srcset="img/previews/home-preview-banner-carousel-5.webp"
+        />
+        <img
+          id="background-img"
+          src="img/previews/home-preview-banner-carousel-5.webp"
+        />
+      </picture>
+      <div class="carousel-content">
+        <img
+          id="title-img"
+          src="img/previews/home-preview-banner-carousel-title-5.webp"
+        />
+        <div class="interact">
+          <button>
+            <img src="svg/play.svg" />
+            <p>CONTINUE WATCHING S1 E10</p>
           </button>
           <button id="big-icon"><img src="svg/bookmark.svg" /></button>
         </div>
@@ -61,78 +152,28 @@
   <div class="home-preview banner-carousel spacement"></div>
 
   <!-- ANIMES AND EPISODES -->
-  <h1 id="category-title">Aired Today</h1>
+  <div class="category-header">
+    <h1>Aired Today</h1>
+  </div>
   <div class="home-preview aired-today">
     <div class="content-next-previous" style="transform: translate3d(0, 0, 0)">
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-aired-today-1.jpg" />
+          <img src="img/previews/home-preview-aired-today-1.webp" />
           <p id="title">Dr.Stone</p>
           <h5>Sub | Dub</h5>
         </a>
       </div>
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-aired-today-2.jpg" />
-          <p id="title">
-            Delicious in DungeonDelicious in DungeonDelicious in
-            DungeonDelicious in Dungeon
-          </p>
+          <img src="img/previews/home-preview-aired-today-2.webp" />
+          <p id="title">Delicious in Dungeon</p>
           <h5>Sub | Dub</h5>
         </a>
       </div>
       <div class="content-item">
         <a href="/series/clannad">
-          <img src="img/previews/home-preview-aired-today-3.jpg" />
-          <p id="title">Clannad</p>
-          <h5>Sub | Dub</h5>
-        </a>
-      </div>
-
-      <div class="content-item">
-        <a href="">
-          <img src="img/previews/home-preview-aired-today-1.jpg" />
-          <p id="title">Dr.Stone</p>
-          <h5>Sub | Dub</h5>
-        </a>
-      </div>
-      <div class="content-item">
-        <a href="">
-          <img src="img/previews/home-preview-aired-today-2.jpg" />
-          <p id="title">
-            Delicious in DungeonDelicious in DungeonDelicious in
-            DungeonDelicious in Dungeon
-          </p>
-          <h5>Sub | Dub</h5>
-        </a>
-      </div>
-      <div class="content-item">
-        <a href="/series/clannad">
-          <img src="img/previews/home-preview-aired-today-3.jpg" />
-          <p id="title">Clannad</p>
-          <h5>Sub | Dub</h5>
-        </a>
-      </div>
-      <div class="content-item">
-        <a href="">
-          <img src="img/previews/home-preview-aired-today-1.jpg" />
-          <p id="title">Dr.Stone</p>
-          <h5>Sub | Dub</h5>
-        </a>
-      </div>
-      <div class="content-item">
-        <a href="">
-          <img src="img/previews/home-preview-aired-today-2.jpg" />
-          <p id="title">
-            Delicious in DungeonDelicious in DungeonDelicious in
-            DungeonDelicious in Dungeon
-          </p>
-          <h5>Sub | Dub</h5>
-        </a>
-      </div>
-      <div class="content-item">
-        <a href="/series/clannad">
-          <img src="img/previews/home-preview-aired-today-3.jpg" />
+          <img src="img/previews/home-preview-aired-today-3.webp" />
           <p id="title">Clannad</p>
           <h5>Sub | Dub</h5>
         </a>
@@ -141,49 +182,168 @@
     <img id="previous" src="svg/previous.svg" />
     <img id="next" src="svg/next.svg" />
   </div>
-  <div class="home-preview navigator"></div>
-  <div class="home-preview keep-watching"></div>
-  <h1 id="category-title">Suggestions</h1>
+  <div class="category-header">
+    <h1 id="category-title">Navigate</h1>
+  </div>
+  <div class="home-preview navigator">
+    <div class="content">
+      <button onclick="scrollToElement('banner-carousel')">Start</button>
+      <button onclick="scrollToElement('aired-today')">Aired Today</button>
+      <button onclick="scrollToElement('keep-watching')">Keep Watching</button>
+      <button onclick="scrollToElement('suggestions')">Suggestions</button>
+      <button onclick="scrollToElement('watch-list')">Watchlist</button>
+      <button onclick="scrollToElement('recently-added')">
+        Recently Added
+      </button>
+    </div>
+  </div>
+  <div class="category-header">
+    <h1>Keep Watching</h1>
+    <a href="">More episodes</a>
+  </div>
+  <div class="home-preview keep-watching">
+    <div class="content">
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-keep-watching-1.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+          <div class="video-length">25m</div>
+          <div class="progress-bar-base"></div>
+          <div class="progress-bar-active" style="width: 18%"></div>
+        </div>
+        <h6>FRIEREN: BEYOND JOURNEY'S END</h6>
+        <p>S1 E17 - Take Care</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-keep-watching-2.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A16.svg" /></div>
+          <div class="video-length">25m</div>
+          <div class="progress-bar-base"></div>
+          <div class="progress-bar-active" style="width: 45%"></div>
+        </div>
+        <h6>VINLAND SAGA</h6>
+        <p>S2 E8 - An Empty Man</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-keep-watching-3.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+          <div class="video-length">23m</div>
+          <div class="progress-bar-base"></div>
+          <div class="progress-bar-active" style="width: 5%"></div>
+        </div>
+        <h6>YURUYURI</h6>
+        <p>S1 E4 - Summer Harvest</p>
+        <h5>Subtitled</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-keep-watching-4.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+          <div class="video-length">23m</div>
+          <div class="progress-bar-base"></div>
+          <div class="progress-bar-active" style="width: 55%"></div>
+        </div>
+        <h6>MY HERO ACADEMIA</h6>
+        <p>S6 E134 - The Lovely Lady Nagant</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-keep-watching-5.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+          <div class="video-length">47m</div>
+          <div class="progress-bar-base"></div>
+          <div class="progress-bar-active" style="width: 75%"></div>
+        </div>
+        <h6>SOUND EUPHONIUM</h6>
+        <p>S2 E1 - Mid-summer Fanfare</p>
+        <h5>Subtitled</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-keep-watching-6.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A16.svg" /></div>
+          <div class="video-length">25m</div>
+          <div class="progress-bar-base"></div>
+          <div class="progress-bar-active" style="width: 16%"></div>
+        </div>
+        <h6>TO YOUR ETERNITY</h6>
+        <p>S2 E18 - Death of a Deathless</p>
+        <h5>Sub | Dub</h5>
+      </a>
+    </div>
+  </div>
+  <div class="category-header">
+    <h1>You Might Like</h1>
+  </div>
   <div class="home-preview suggestions">
     <div class="content-next-previous" style="transform: translate3d(0, 0, 0)">
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-suggestions-1.jpg" />
+          <img src="img/previews/home-preview-suggestions-1.webp" />
           <p id="title">Code Geass</p>
           <h5>Sub | Dub</h5>
         </a>
       </div>
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-suggestions-2.jpg" />
+          <img src="img/previews/home-preview-suggestions-2.webp" />
           <p id="title">Spy x Family 2</p>
           <h5>Sub | Dub</h5>
         </a>
       </div>
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-suggestions-3.jpg" />
+          <img src="img/previews/home-preview-suggestions-3.webp" />
           <p id="title">Jujutsu Kaisen 2</p>
           <h5>Sub | Dub</h5>
         </a>
       </div>
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-suggestions-4.jpg" />
+          <img src="img/previews/home-preview-suggestions-4.webp" />
           <p id="title">Bocchi The Rock!</p>
           <h5>Sub | Dub</h5>
         </a>
       </div>
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-suggestions-5.jpg" />
+          <img src="img/previews/home-preview-suggestions-5.webp" />
           <p id="title">Attack on Titan: Final Season - The Final Chapters</p>
           <h5>Sub | Dub</h5>
         </a>
       </div>
       <div class="content-item">
         <a href="">
-          <img src="img/previews/home-preview-suggestions-6.jpg" />
+          <img src="img/previews/home-preview-suggestions-6.webp" />
           <p id="title">Code Geass</p>
           <h5>Sub | Dub</h5>
         </a>
@@ -192,7 +352,86 @@
     <img id="previous" src="svg/previous.svg" />
     <img id="next" src="svg/next.svg" />
   </div>
-  <div class="home-preview watch-list"></div>
+  <div class="category-header">
+    <h1>Watchlist</h1>
+    <a href="">More episodes</a>
+  </div>
+  <div class="home-preview watch-list">
+    <div class="content">
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-watch-list-1.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+        </div>
+        <p>Sound! Euphonium</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-watch-list-2.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+        </div>
+        <p>KAGUYA-SAMA: LOVE IS WAR</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-watch-list-3.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+        </div>
+        <p>KONOSUBA - God's blessing on this wonderful world!</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-watch-list-4.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+        </div>
+        <p>Golden Time</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-watch-list-5.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+        </div>
+        <p>Attack on Titan</p>
+        <h5>Sub | Dub</h5>
+      </a>
+      <a href="" class="content-item">
+        <div class="video-preview">
+          <img src="img/previews/home-preview-watch-list-6.webp" />
+          <div class="hidden-preview">
+            <div class="add-to-list"><img src="svg/bookmark.svg" /></div>
+            <div class="play-img"><img src="svg/play.svg" /></div>
+          </div>
+          <div class="age-rating"><img src="svg/A12.svg" /></div>
+        </div>
+        <p>Black Clover</p>
+        <h5>Sub | Dub</h5>
+      </a>
+    </div>
+  </div>
   <div class="home-preview recently-added"></div>
 </main>
 <script src="js/home.js"></script>
