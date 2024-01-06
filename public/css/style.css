@@ -497,32 +497,45 @@ input:-webkit-autofill {
 
 /* mini-banners -> previous/next */
 
-.home-preview #title,
-.home-preview #title {
+.home-preview.next-previous .age-rating {
+  position: absolute;
+  top: 5px;
+  margin-left: 5px;
+  width: 30px;
+}
+
+.home-preview.suggestions .age-rating {
+  width: 35px;
+}
+
+.home-preview.next-previous .age-rating img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-preview.next-previous #title {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
-.home-preview.suggestions,
-.home-preview.aired-today {
+.home-preview.next-previous {
   display: grid;
   height: 450px;
   overflow: hidden;
 }
 
-.home-preview.suggestions .content-next-previous,
-.home-preview.aired-today .content-next-previous {
+.home-preview.next-previous .content {
   display: flex;
   width: 94%;
   height: 100%;
 
   transition: all 0.4s ease-in-out 0s;
+  transform: translateX(50px);
 }
 
-.home-preview.suggestions .content-item,
-.home-preview.aired-today .content-item {
+.home-preview.next-previous .content-item {
   display: inline-flex;
   margin-left: 1em;
   width: 250px;
@@ -534,15 +547,12 @@ input:-webkit-autofill {
   width: 350px;
 }
 
-.home-preview.suggestions .content-item img,
-.home-preview.aired-today .content-item img {
+.home-preview.next-previous .content-item img {
   height: 100%;
 }
 
-.home-preview.suggestions #next,
-.home-preview.suggestions #previous,
-.home-preview.aired-today #next,
-.home-preview.aired-today #previous {
+.home-preview.next-previous #next,
+.home-preview.next-previous #previous {
   background-color: var(--half-half-black);
   height: 50px;
   padding: 162.5px 0 162.5px 0;
@@ -556,21 +566,17 @@ input:-webkit-autofill {
   padding: 212.5px 0 212.5px 0;
 }
 
-.home-preview.suggestions #next:hover,
-.home-preview.suggestions #previous:hover,
-.home-preview.aired-today #next:hover,
-.home-preview.aired-today #previous:hover {
+.home-preview.next-previous #next:hover,
+.home-preview.next-previous #previous:hover {
   cursor: pointer;
   background-color: var(--half-black);
 }
 
-.home-preview.suggestions #previous,
-.home-preview.aired-today #previous {
+.home-preview.next-previous #previous {
   left: 0;
 }
 
-.home-preview.suggestions #next,
-.home-preview.aired-today #next {
+.home-preview.next-previous #next {
   right: 0;
 }
 
@@ -601,13 +607,11 @@ input:-webkit-autofill {
 
 /* mini-banners */
 
-.home-preview.watch-list,
-.home-preview.keep-watching {
+.home-preview.video {
   height: 265px;
 }
 
-.home-preview.watch-list .content,
-.home-preview.keep-watching .content {
+.home-preview.video .content {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1em;
@@ -615,14 +619,12 @@ input:-webkit-autofill {
   overflow: hidden;
 }
 
-.home-preview.watch-list .content-item,
-.home-preview.keep-watching .content-item {
+.home-preview.video .content-item {
   height: 100%;
   width: 100%;
 }
 
-.home-preview.watch-list .video-preview,
-.home-preview.keep-watching .video-preview {
+.home-preview.video .video-preview {
   position: relative;
   height: auto;
   width: 100%;
@@ -634,51 +636,42 @@ input:-webkit-autofill {
   min-height: 100%;
 }
 
-.home-preview.keep-watching .video-preview .progress-bar-active,
-.home-preview.keep-watching .video-preview .progress-bar-base,
-.home-preview.keep-watching .video-preview .video-length {
+.home-preview.video .video-preview .progress-bar-active,
+.home-preview.video .video-preview .progress-bar-base,
+.home-preview.video .video-preview .video-length {
   position: absolute;
   bottom: 0;
   background-color: var(--half-black);
 }
 
-.home-preview.watch-list .play-img,
-.home-preview.keep-watching .video-preview .play-img,
-.home-preview.watch-list .add-to-list,
-.home-preview.keep-watching .video-preview .add-to-list,
-.home-preview.watch-list .age-rating,
-.home-preview.keep-watching .video-preview .age-rating {
+.home-preview.video .play-img,
+.home-preview.video .add-to-list,
+.home-preview.video .age-rating {
   position: absolute;
   width: 25px;
   height: 25px;
   top: 5px;
 }
 
-.home-preview.watch-list .play-img img,
-.home-preview.keep-watching .video-preview .play-img img,
-.home-preview.watch-list .add-to-list img,
-.home-preview.keep-watching .video-preview .add-to-list img,
-.home-preview.watch-list .age-rating img,
-.home-preview.keep-watching .video-preview .age-rating img {
+.home-preview.video .play-img img,
+.home-preview.video .add-to-list img,
+.home-preview.video .age-rating img {
   width: 100%;
   height: 100%;
 }
 
-.home-preview.watch-list .age-rating,
-.home-preview.keep-watching .video-preview .age-rating {
+.home-preview.video .age-rating {
   left: 5px;
 }
 
-.home-preview.watch-list .add-to-list,
-.home-preview.keep-watching .video-preview .add-to-list {
+.home-preview.video .add-to-list {
   right: 5px;
   width: 50px;
   height: 50px;
   border-radius: 3px;
 }
 
-.home-preview.watch-list .play-img,
-.home-preview.keep-watching .video-preview .play-img {
+.home-preview.video .play-img {
   top: 5%;
   left: 25%;
   width: 50%;
@@ -687,8 +680,7 @@ input:-webkit-autofill {
   border-radius: 50%;
 }
 
-.home-preview.watch-list .add-to-list:hover,
-.home-preview.keep-watching .video-preview .add-to-list:hover {
+.home-preview.video .add-to-list:hover {
   background-color: var(--purple-second);
 }
 
@@ -698,13 +690,13 @@ input:-webkit-autofill {
   padding: 0.15em;
 }
 
-.home-preview.keep-watching .video-preview .progress-bar-active,
-.home-preview.keep-watching .video-preview .progress-bar-base {
+.home-preview.video .video-preview .progress-bar-active,
+.home-preview.video .video-preview .progress-bar-base {
   width: 100%;
   height: 5px;
 }
 
-.home-preview.keep-watching .video-preview .progress-bar-active {
+.home-preview.video .video-preview .progress-bar-active {
   width: 0;
   background-color: var(--purple-base);
 }
@@ -806,6 +798,14 @@ input:-webkit-autofill {
 
   /* banner */
 
+  .home-preview.next-previous .age-rating {
+    width: 20px;
+  }
+
+  .home-preview.suggestions .age-rating {
+    width: 25px;
+  }
+
   .home-preview.banner-carousel .carousel-image #background-img {
     display: block;
     min-height: 100%;
@@ -850,26 +850,42 @@ input:-webkit-autofill {
 
   /* mini-banners -> previous/next */
 
-  .home-preview.suggestions,
-  .home-preview.aired-today {
+  .home-preview.next-previous {
     height: 300px;
     overflow-x: scroll;
+    overflow-y: visible;
     display: block;
     margin-right: 0.6em;
   }
 
-  .home-preview.suggestions #next,
-  .home-preview.suggestions #previous,
-  .home-preview.aired-today #next,
-  .home-preview.aired-today #previous {
-    display: none;
+  .home-preview.next-previous #next,
+  .home-preview.next-previous #previous {
+    z-index: 1;
+    top: -60px;
+    height: 30px;
+    padding: 1%;
+    background-color: var(--purple-base);
+    border-radius: 20px;
   }
 
-  .home-preview.suggestions .content-item,
-  .home-preview.aired-today .content-item {
+  .home-preview.next-previous #next {
+    right: 10px;
+  }
+
+  .home-preview.next-previous #previous {
+    left: auto;
+    right: 60px;
+  }
+
+  .home-preview.next-previous .content-item {
     margin-left: 0.6em;
     width: 150px;
     height: 225px;
+  }
+
+  .home-preview.suggestions #next,
+  .home-preview.suggestions #previous {
+    padding: 1%;
   }
 
   /* navigator */
@@ -975,6 +991,14 @@ input:-webkit-autofill {
 
   /* banner */
 
+  .home-preview.next-previous .age-rating {
+    width: 20px;
+  }
+
+  .home-preview.suggestions .age-rating {
+    width: 25px;
+  }
+
   .home-preview.home-preview.banner-carousel .carousel-image {
     justify-content: center;
   }
@@ -1008,23 +1032,19 @@ input:-webkit-autofill {
 
   /* mini-banners -> previous/next */
 
-  .home-preview.suggestions,
-  .home-preview.aired-today {
+  .home-preview.next-previous {
     height: 300px;
     overflow-x: scroll;
     display: block;
     margin-right: 0.6em;
   }
 
-  .home-preview.suggestions #next,
-  .home-preview.suggestions #previous,
-  .home-preview.aired-today #next,
-  .home-preview.aired-today #previous {
+  .home-preview.next-previous #next,
+  .home-preview.next-previous #previous {
     display: none;
   }
 
-  .home-preview.suggestions .content-item,
-  .home-preview.aired-today .content-item {
+  .home-preview.next-previous .content-item {
     margin-left: 0.6em;
     width: 150px;
     height: 225px;

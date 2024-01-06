@@ -24,7 +24,7 @@ updateCarousel();
 
 // Select next/previous divs
 var contentDivs = Array.from(
-  document.querySelectorAll(".home-preview .content-next-previous"),
+  document.querySelectorAll(".home-preview.next-previous .content"),
 );
 
 contentDivs.forEach((contentDiv, i) => {
@@ -48,7 +48,7 @@ contentDivs.forEach((contentDiv, i) => {
   function updateContentPosition(index) {
     var contentItems = Array.from(contentDiv.querySelectorAll(".content-item"));
     var itemWidth = contentItems[0].offsetWidth;
-    var itemsPerSlide = 4;
+    var itemsPerSlide = window.innerWidth <= 600 ? 1 : 4;
     var totalWidth = itemWidth * itemsPerSlide; // Calculate the total width of 8 items
 
     // Check current slide number
@@ -59,9 +59,13 @@ contentDivs.forEach((contentDiv, i) => {
     }
 
     // Update the style property
-    contentDivs[index].style.transform = `translateX(-${
-      currentSlideNumber * totalWidth
-    }px)`;
+    if (currentSlideNumber === 0) {
+      contentDivs[index].style.transform = `translateX(50px)`;
+    } else {
+      contentDivs[index].style.transform = `translateX(-${
+        currentSlideNumber * totalWidth
+      }px)`;
+    }
   }
 });
 
