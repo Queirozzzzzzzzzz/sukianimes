@@ -30,5 +30,10 @@ app.get("/register", (req, res) => {
   res.render("register");
 });
 
+app.get("/series/:series", (req, res) => {
+  const series = req.params.series;
+  res.render("series", { series: series });
+});
+
 // Listen on port 3592
 app.listen(port, () => console.info(`Listening on port ${port}`));
