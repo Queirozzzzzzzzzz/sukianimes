@@ -853,7 +853,7 @@ input:-webkit-autofill {
   .home-preview.next-previous {
     height: 300px;
     overflow-x: scroll;
-    overflow-y: visible;
+
     display: block;
     margin-right: 0.6em;
   }
@@ -875,6 +875,10 @@ input:-webkit-autofill {
   .home-preview.next-previous #previous {
     left: auto;
     right: 60px;
+  }
+
+  .home-preview.next-previous .content {
+    transform: translateX(0px);
   }
 
   .home-preview.next-previous .content-item {
