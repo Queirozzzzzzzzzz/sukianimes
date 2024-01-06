@@ -549,7 +549,7 @@ input:-webkit-autofill {
 
 .home-preview.next-previous .content-item img {
   height: 100%;
-  width: 100%;
+  min-width: 100%;
 }
 
 .home-preview.next-previous #next,
@@ -733,6 +733,8 @@ input:-webkit-autofill {
 }
 
 /* SERIES */
+
+.series.
 
 /* RESPONSIVE */
 
