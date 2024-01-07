@@ -1,0 +1,217 @@
+/* Tablet and 90° mobile styles */
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* BASE */
+
+  footer,
+  header {
+    height: 12vh;
+  }
+
+  footer a {
+    font-size: 2vw;
+  }
+
+  /* NAVBAR */
+
+  .navbar-items {
+    position: fixed;
+    right: 0vw;
+    top: 12vh;
+    width: 100vw;
+    height: 87vh;
+    overflow-y: scroll;
+  }
+
+  .navbar-section {
+    width: 95vw;
+  }
+
+  .navbar-section img {
+    height: 3vw;
+  }
+
+  .navbar-section button {
+    height: 5vw;
+  }
+
+  .navbar-items .profile-picture img {
+    height: 8vw;
+  }
+
+  /* OFFER UPGRADE */
+
+  .offer-upgrade.banner button {
+    width: 20vw;
+    height: 8vw;
+  }
+
+  .offer-upgrade.banner h1 {
+    font-size: 5vw;
+  }
+
+  .offer-upgrade.products-container {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offer-upgrade.products-container .product {
+    margin: 1em 10em 1em 10em;
+  }
+
+  .offer-upgrade .product button {
+    height: 15vh;
+  }
+
+  /* TECNICAL FORM */
+
+  .tecnical-form form {
+    width: 100%;
+  }
+
+  /* HOME */
+
+  .category-header {
+    margin: 0.6em;
+  }
+
+  .hidden-preview {
+    opacity: 1;
+    background-color: var(--no-color);
+  }
+
+  .hidden-preview .play-img {
+    opacity: 0;
+  }
+
+  /* banner */
+
+  .home-preview.next-previous .age-rating {
+    width: 20px;
+  }
+
+  .home-preview.suggestions .age-rating {
+    width: 25px;
+  }
+
+  .home-preview.home-preview.banner-carousel .carousel-image {
+    justify-content: center;
+  }
+
+  .home-preview.banner-carousel h2,
+  .home-preview.banner-carousel h1 {
+    font-size: 3em;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .home-preview.banner-carousel .interact button {
+    display: flex;
+    margin-right: 1em;
+    padding: 1em;
+    height: 4em;
+  }
+
+  .home-preview .carousel-content {
+    top: 33vh;
+    left: 0;
+    margin: 0;
+    height: 33vh;
+    width: 100vw;
+    padding: 0;
+    justify-content: end;
+    align-items: center;
+  }
+
+  /* mini-banners -> previous/next */
+
+  .home-preview.next-previous {
+    height: 300px;
+    overflow-x: scroll;
+    display: block;
+    margin-right: 0.6em;
+  }
+
+  .home-preview.next-previous #next,
+  .home-preview.next-previous #previous {
+    display: none;
+  }
+
+  .home-preview.next-previous .content-item {
+    margin-left: 0.6em;
+    width: 150px;
+    height: 225px;
+  }
+
+  .home-preview.suggestions .content-item {
+    height: 285px;
+    width: 210px;
+  }
+
+  .home-preview.suggestions {
+    height: 360px;
+  }
+
+  /* navigator */
+
+  .home-preview.navigator {
+    padding: 0;
+  }
+
+  .home-preview.navigator .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-preview.navigator button {
+    height: 3em;
+  }
+
+  /* mini-banners */
+
+  .home-preview.next-previous .content {
+    transform: translateX(0.5em);
+  }
+
+  .home-preview.video .add-to-watch-list {
+    width: 25px;
+    height: 25px;
+  }
+
+  .home-preview.video .content {
+    margin: 1em;
+  }
+
+  .home-preview.video .video-preview #thumbnail {
+    width: 150px;
+  }
+
+  .home-preview.video {
+    height: 180px;
+  }
+
+  /* SERIES */
+
+  .series .banner {
+    padding: 0;
+  }
+
+  /* info */
+
+  .series .info {
+    width: 100%;
+  }
+
+  .series .info .actions {
+    width: 50%;
+  }
+
+  /* episode */
+
+  .series .episode {
+    display: none;
+  }
+}

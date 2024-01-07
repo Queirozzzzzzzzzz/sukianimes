@@ -1,0 +1,22 @@
+/* Notebook styles */
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* NAVBAR */
+
+  .navbar-items {
+    width: 25vw;
+    right: 7vw;
+  }
+
+  .navbar-section {
+    width: 24vw;
+  }
+
+  /* HOME */
+
+  /* mini-banners */
+
+  .home-preview.video .content {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
