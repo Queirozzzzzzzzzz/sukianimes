@@ -172,6 +172,12 @@
     height: 225px;
   }
 
+  .home-preview.next-previous .content-item #cover {
+    width: 150px;
+    height: 225px;
+    max-width: none;
+  }
+
   .home-preview.next-previous .add-to-watch-list {
     width: 30px;
     height: 30px;
