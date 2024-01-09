@@ -22,5 +22,13 @@
 
   /* SERIES */
 
+  .series .info {
+    height: 38vh;
+  }
+
+  .series .info .more-details {
+    top: 38vh;
+  }
+
   /* navigation */
 }
