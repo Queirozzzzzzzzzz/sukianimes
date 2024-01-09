@@ -70,6 +70,7 @@ header {
 
 footer {
   justify-content: center;
+  height: 5vh;
 }
 
 footer a {
@@ -588,7 +589,7 @@ input:-webkit-autofill {
   height: 550px;
 }
 
-.home-preview.next-previous a {
+.home-preview.next-previous .container {
   position: relative;
   width: 100%;
   height: 100%;
@@ -598,12 +599,13 @@ input:-webkit-autofill {
   position: absolute;
   top: 5px;
   right: 5px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-.home-preview.next-previous .add-to-watch-list:hover {
-  background-color: var(--purple-second);
+.add-to-watch-list:hover {
+  background-color: var(--half-black);
+  border-radius: 3px;
 }
 
 /* navigator */
@@ -644,6 +646,7 @@ input:-webkit-autofill {
 }
 
 .home-preview.video .content-item {
+  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -688,6 +691,10 @@ input:-webkit-autofill {
   left: 5px;
 }
 
+.home-preview .add-to-watch-list {
+  cursor: pointer;
+}
+
 .home-preview.video .add-to-watch-list {
   right: 5px;
   width: 35px;
@@ -702,10 +709,6 @@ input:-webkit-autofill {
   height: 50%;
   padding: 10% 0 10% 0;
   border-radius: 50%;
-}
-
-.home-preview.video .add-to-watch-list:hover {
-  background-color: var(--purple-second);
 }
 
 .home-preview.video .video-preview .video-length {
@@ -748,6 +751,7 @@ input:-webkit-autofill {
 
 /* banner */
 
+.series.reviews,
 .series.navigation,
 .series.banner {
   position: relative;
@@ -756,6 +760,10 @@ input:-webkit-autofill {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  margin-bottom: 5vh;
+}
+
+.series.banner {
   margin-top: 5vh;
 }
 
@@ -954,6 +962,10 @@ input:-webkit-autofill {
   object-fit: contain;
 }
 
+.series.navigation .episodes .content-item .image #watched {
+  filter: opacity(50%);
+}
+
 .series.navigation .episodes .content-item .details {
   position: absolute;
   top: 0;
@@ -977,15 +989,34 @@ input:-webkit-autofill {
   padding: 3px;
 }
 
+.series .episodes #play-preview {
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.series .episodes .content-item:hover #play-preview {
+  opacity: 1;
+  width: 80px;
+  height: 80px;
+}
+
 .series.navigation .episodes .content-item .info {
   width: 100%;
-  height: 30%;
+  height: 50%;
+  padding: 0.5em 0 0.1em 0;
 }
 
 .series.navigation .episodes .content-item .info p {
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 .series.navigation .episodes .content-item .info h5 {
@@ -994,6 +1025,45 @@ input:-webkit-autofill {
 
 .series.navigation .episodes .content-item .info h6 {
   color: var(--gray-forth);
+}
+
+/* reviews */
+
+.series.reviews .comments {
+  width: 100%;
+}
+
+.series.reviews .comment {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 2em;
+  justify-items: start;
+  margin-bottom: 2em;
+  justify-content: start;
+}
+
+.series.reviews .profile {
+  margin-right: 1em;
+}
+
+.series.reviews .comment .profile #logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.series.reviews .comment .user-info {
+  display: flex;
+}
+
+.series.reviews .comment .user-info div {
+  display: flex;
+  margin-right: 5px;
+  color: var(--gray-forth);
+}
+
+.series.reviews .comment .content {
 }
 
 /* ATTRIBUTES */

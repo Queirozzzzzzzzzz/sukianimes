@@ -172,6 +172,11 @@
     height: 225px;
   }
 
+  .home-preview.next-previous .add-to-watch-list {
+    width: 30px;
+    height: 30px;
+  }
+
   .home-preview.suggestions #next,
   .home-preview.suggestions #previous {
     padding: 1%;
@@ -212,6 +217,7 @@
 
   /* SERIES */
 
+  .series.reviews,
   .series.navigation,
   .series.banner {
     display: block;
@@ -288,5 +294,9 @@
 
   .series.navigation .episodes .content-item .details #video-length {
     font-size: 0.8em;
+  }
+
+  .series.navigation .episodes .content-item .info {
+    padding: 0;
   }
 }
