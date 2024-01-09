@@ -19,4 +19,8 @@
   .home-preview.video .content {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  /* SERIES */
+
+  /* navigation */
 }

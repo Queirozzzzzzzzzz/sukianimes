@@ -9,12 +9,15 @@
   --gray-second: #242229;
   --gray-third: #69686b;
   --gray-forth: #3c3a42;
+  --gray-fifth: gray;
   --black-base: #1b1b1b;
   --white-base: #f5f5f5;
   --no-color: rgba(0, 0, 0, 0);
   --black: black;
   --half-black: rgba(0, 0, 0, 0.5);
   --half-half-black: rgba(0, 0, 0, 0.25);
+  --half-gray: rgba(128, 128, 128, 0.5);
+  --half-half-gray: rgba(128, 128, 128, 0.25);
   --85-black: rgba(0, 0, 0, 0.85);
 
   /* dimensions */
@@ -359,7 +362,7 @@ input:-webkit-autofill {
 
 .category-header {
   z-index: 1;
-  margin: 0 70px 0 70px;
+  margin: 0 70px 0.6em 70px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -722,6 +725,10 @@ input:-webkit-autofill {
   background-color: var(--purple-base);
 }
 
+.home-preview .video-preview .content-item .info {
+  position: absolute;
+}
+
 .home-preview.keep-watching .content-item h5,
 .home-preview.keep-watching .content-item p,
 .home-preview.keep-watching .content-item h6 {
@@ -741,10 +748,11 @@ input:-webkit-autofill {
 
 /* banner */
 
+.series.navigation,
 .series.banner {
   position: relative;
   height: auto;
-  padding: 0 5vw 0 5vw;
+  padding: 0 15vw 0 15vw;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -757,6 +765,39 @@ input:-webkit-autofill {
   height: 30vh;
   width: 60vw;
   overflow: hidden;
+}
+
+.series .info.active {
+  height: auto;
+}
+
+.series .info .rating {
+  height: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.series .info .rating p {
+  color: var(--gray-fifth);
+  font-size: 0.8em;
+}
+
+.series .info .rating select {
+  background-color: var(--purple-base);
+  padding: 0 0.6em 0 0.6em;
+  border: none;
+  border-radius: 3px;
+}
+
+.series .info .rating select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.series .info .rating #spacement {
+  margin: 0 3px 0 3px;
+  font-size: 1.5em;
+  color: var(--gray-second);
 }
 
 .series .info .fewer-details,
@@ -773,20 +814,31 @@ input:-webkit-autofill {
 }
 
 .series .info h1 {
-  margin: 1em 0 1em 0;
+  font-size: 3em;
+  overflow-wrap: break-word;
 }
 
 .series .info .actions {
-  height: 5em;
   display: flex;
+  align-items: center;
+  margin-bottom: 0.6em;
 }
 
 .series .info .playlist,
 .series .info .watch-list {
-  height: 3em;
-  padding: 0 3px 0 3px;
+  height: 45px;
+  padding: 0 11px 0 3px;
   display: flex;
   align-items: center;
+  margin-right: 6px;
+}
+
+.series .info .watch-list {
+  border-radius: 0;
+}
+
+.series .info .playlist:hover {
+  background-color: var(--half-half-gray);
 }
 
 .series .info .details table {
@@ -859,7 +911,90 @@ input:-webkit-autofill {
   margin-top: 1em;
 }
 
-/* RESPONSIVE */
+/* navigation */
+
+.series.navigation {
+  display: block;
+}
+
+.series.navigation .seasons select {
+  padding: 0.6em 0;
+  width: 15%;
+  margin-bottom: 1em;
+  background-color: var(--purple-base);
+  border: none;
+  outline: none;
+}
+
+.series.navigation .seasons select option {
+  padding: 1em 0;
+}
+
+.series.navigation .seasons select option:hover {
+  background-color: purple;
+}
+
+.series.navigation .episodes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+  overflow: hidden;
+}
+
+.series.navigation .episodes .content-item {
+  position: relative;
+  width: calc(66vw / 4);
+  height: auto;
+  overflow: hidden;
+}
+
+.series.navigation .episodes .content-item .image {
+  position: relative;
+  height: calc(10vw);
+  object-fit: contain;
+}
+
+.series.navigation .episodes .content-item .details {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.series.navigation .episodes .content-item .details #age-rating {
+  position: absolute;
+  top: 5px;
+  margin-left: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.series.navigation .episodes .content-item .details #video-length {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: var(--half-black);
+  padding: 3px;
+}
+
+.series.navigation .episodes .content-item .info {
+  width: 100%;
+  height: 30%;
+}
+
+.series.navigation .episodes .content-item .info p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.series.navigation .episodes .content-item .info h5 {
+  font-weight: 100;
+}
+
+.series.navigation .episodes .content-item .info h6 {
+  color: var(--gray-forth);
+}
 
 /* ATTRIBUTES */
 

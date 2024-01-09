@@ -30,9 +30,11 @@ app.get("/register", (req, res) => {
   res.render("register");
 });
 
-app.get("/series/:series", (req, res) => {
-  const series = req.params.series;
-  res.render("series", { series: series });
+app.get("/series/:series/:season", (req, res) => {
+  res.render("series", {
+    series: req.params.series,
+    season: req.params.season,
+  });
 });
 
 // Listen on port 3592

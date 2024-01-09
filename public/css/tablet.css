@@ -195,23 +195,70 @@
 
   /* SERIES */
 
-  .series .banner {
-    padding: 0;
+  .series.navigation,
+  .series.banner {
+    padding: 0 1vw 0 1vw;
+    display: block;
   }
 
   /* info */
 
   .series .info {
     width: 100%;
+    height: 50vh;
   }
 
   .series .info .actions {
     width: 50%;
   }
 
+  .series .info .more-details {
+    top: 50vh;
+  }
+
+  .series .info .fewer-details {
+    bottom: auto;
+  }
+
   /* episode */
 
   .series .episode {
+    margin: 1em 0 1em 0;
+  }
+
+  .series .episode .preview {
     display: none;
+  }
+
+  .series .episode button {
+    width: 90%;
+  }
+
+  /* episodes */
+
+  .series.navigation .seasons select {
+    width: 20%;
+    border-radius: 3px;
+  }
+
+  .series.navigation .episodes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .series.navigation .content-item {
+    width: calc(96vw / 3) !important;
+  }
+
+  .series.navigation .content-item .image {
+    height: calc(55vw / 3) !important;
+  }
+
+  .series.navigation .episodes .content-item .details #age-rating {
+    width: 20px;
+    height: 20px;
+  }
+
+  .series.navigation .episodes .content-item .details #video-length {
+    font-size: 0.8em;
   }
 }

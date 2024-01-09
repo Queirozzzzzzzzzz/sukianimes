@@ -212,8 +212,10 @@
 
   /* SERIES */
 
-  .series .banner {
-    padding: 0;
+  .series.navigation,
+  .series.banner {
+    display: block;
+    padding: 0 0.5em 0 0.5em;
   }
 
   /* info */
@@ -222,13 +224,69 @@
     width: 100%;
   }
 
+  .series .info .rating p {
+    font-size: 0.7em;
+  }
+
+  .series .info .rating p strong {
+    font-size: 1em;
+  }
+
   .series .info .actions {
     width: 50%;
+  }
+
+  .series .info .fewer-details {
+    bottom: auto;
   }
 
   /* episode */
 
   .series .episode {
+    margin: 3em 0 1em 0;
+  }
+
+  .series .episode .preview {
     display: none;
+  }
+
+  .series .episode button {
+    width: 90%;
+  }
+
+  /* navigation */
+
+  /* SERIES */
+
+  /* episodes */
+
+  .series.navigation .seasons select {
+    width: 25%;
+    border-radius: 3px;
+  }
+
+  .series.navigation .episodes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .series.navigation .episodes .content-item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.5em;
+  }
+
+  .series.navigation .episodes .content-item .image {
+    height: 25vw;
+    margin-right: 0.5em;
+  }
+
+  .series.navigation .episodes .content-item .details #age-rating {
+    width: 20px;
+    height: 20px;
+  }
+
+  .series.navigation .episodes .content-item .details #video-length {
+    font-size: 0.8em;
   }
 }
