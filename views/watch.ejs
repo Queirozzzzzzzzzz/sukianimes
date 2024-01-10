@@ -1,23 +1,47 @@
 <%- include('partials/head') %> <%- include('partials/header') %>
 <main>
-  <div class="series banner">
-    <div
-      class="background-image"
-      style="
-        background-image: url(&quot;/img/previews/series-preview-1.webp&quot;);
-      "
-    ></div>
-    <picture>
-      <source
-        media="(max-width: 600px)"
-        srcset="/img/previews/series-preview-mobile-1.webp"
-      />
-      <source
-        media="(min-width: 601px)"
-        srcset="/img/previews/series-preview-1.webp"
-      />
-      <img id="background-img" src="/img/previews/series-preview-1.webp" />
-    </picture>
+  <div class="series episode paused">
+    <div class="video-controls">
+      <div class="controls">
+        <button class="play-pause-btn">
+          <img class="play-icon" src="/svg/play.svg" />
+          <img class="paused-icon" src="/svg/pause.svg" />
+        </button>
+        <div class="volume-container">
+          <button class="mute-btn">
+            <img class="volume-mute-icon" src="/svg/0-volume.svg" />
+            <img class="volume-low-icon" src="/svg/50-volume.svg" />
+            <img class="volume-high-icon" src="/svg/100-volume.svg" />
+          </button>
+          <input
+            class="slider"
+            type="range"
+            min="0"
+            max="1"
+            step="any"
+            value="0.7"
+          />
+        </div>
+        <button class="picture-in-picture-btn">
+          <img
+            class="picture-in-picture-in-icon"
+            src="/svg/picture-in-picture-in.svg"
+          />
+          <img
+            class="picture-in-picture-out-icon"
+            src="/svg/picture-in-picture-out.svg"
+          />
+        </button>
+        <button class="full-screen-btn">
+          <img class="full-screen-in-icon" src="/svg/full-screen-in.svg" />
+          <img class="full-screen-out-icon" src="/svg/full-screen-out.svg" />
+        </button>
+      </div>
+    </div>
+    <video class="video">
+      <source src="/videos/gseryh.mp4" />
+      This browser don't support .mp4 files.
+    </video>
   </div>
   <div class="series head">
     <div class="info">
@@ -84,7 +108,7 @@
       <div class="fewer-details" style="display: none">Fewer details...</div>
     </div>
     <div class="episode">
-      <a href="/series/sousou-no-frieren/watch/1/6" class="preview">
+      <a href="/watch/sousou-no-frieren/1/1" class="preview">
         <img
           id="episode-preview"
           src="/img/previews/series-sousou-no-frieren-preview-ep-6.webp"
@@ -99,307 +123,8 @@
     </div>
   </div>
   <div class="series spacement"><div class="border"></div></div>
-  <div class="series navigation">
-    <div class="seasons">
-      <select name="series-seasons" id="series-seasons">
-        <option selected disabled value="">Seasons</option>
-        <option value="1" data-url="/series/sousou-no-frieren/1">
-          S1. Frieren: Beyond Journey's End
-        </option>
-      </select>
-    </div>
-    <div class="episodes">
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            id="watched"
-            src="/img/previews/series-sousou-no-frieren-preview-ep-1.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">Watched</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E1 - The Journey's End</p>
-          <h5>09/29/2023</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            id="watched"
-            src="/img/previews/series-sousou-no-frieren-preview-ep-2.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">Watched</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E2 - It Didn't Have to Be Magic</p>
-          <h5>09/29/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            id="watched"
-            src="/img/previews/series-sousou-no-frieren-preview-ep-3.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">Watched</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E3 - Killing Magic</p>
-          <h5>09/29/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            id="watched"
-            src="/img/previews/series-sousou-no-frieren-preview-ep-4.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">Watched</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E4 - The Land Where Souls Rest</p>
-          <h5>09/29/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            id="watched"
-            src="/img/previews/series-sousou-no-frieren-preview-ep-5.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">Watched</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E5 - Phantoms of the Dead</p>
-          <h5>10/06/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="/series/sousou-no-frieren/watch/1/6" class="content-item">
-        <div class="image">
-          <img src="/img/previews/series-sousou-no-frieren-preview-ep-6.webp" />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">8m left</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E6 - The Hero of the Village</p>
-          <h5>10/13/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img src="/img/previews/series-sousou-no-frieren-preview-ep-7.webp" />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E7 - Like a Fairy Tale</p>
-          <h5>10/20/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img src="/img/previews/series-sousou-no-frieren-preview-ep-8.webp" />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E8 - Frieren the Slayer</p>
-          <h5>10/27/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img src="/img/previews/series-sousou-no-frieren-preview-ep-9.webp" />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E9 - Aura the Guillotine</p>
-          <h5>11/03/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-10.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E10 - A Powerful Mage</p>
-          <h5>11/10/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-11.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E11 - Winter in the Northen Lands</p>
-          <h5>11/17/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-12.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E12 - A Real Hero</p>
-          <h5>11/24/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-13.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E13 - Aversion to One's Own Kind</p>
-          <h5>12/01/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-14.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E14 - Privilege of the Young</p>
-          <h5>12/08/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-15.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E15 - Smells Like Trouble</p>
-          <h5>12/15/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-16.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E16 - Long-Lived Friends</p>
-          <h5>12/22/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-      <a href="" class="content-item">
-        <div class="image">
-          <img
-            src="/img/previews/series-sousou-no-frieren-preview-ep-17.webp"
-          />
-          <img id="play-preview" src="/svg/play.svg" />
-          <div class="details">
-            <img id="age-rating" src="/svg/A12.svg" />
-            <p id="video-length">24m</p>
-          </div>
-        </div>
-        <div class="info">
-          <p>S1 E17 - Take Care</p>
-          <h5>01/05/2019</h5>
-          <h6>Dub English | Sub</h6>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="series spacement"><div class="border"></div></div>
-  <div class="series reviews">
-    <div class="write-review">
+  <div class="series comments">
+    <div class="write-comment">
       <h2>Write your own review</h2>
       <form action="">
         <label for="review-title">Title</label>
@@ -416,9 +141,8 @@
       </form>
     </div>
     <div class="header">
-      <div class="review-count">441 Reviews</div>
+      <div class="comments-count">98 comments</div>
       <div id="spacement">|</div>
-      <div class="rating">9.4 (82k)</div>
       <div class="filter">
         <img src="/svg/filter.svg" />
         <div class="filter-options" style="display: none">
@@ -427,8 +151,8 @@
         </div>
       </div>
     </div>
-    <div class="reviews-comments">
-      <div class="reviews-comment">
+    <div class="comments">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -448,12 +172,11 @@
             <div class="review-date">01/09/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">PERFECTTTTTTTT</h2>
             <p id="text">PERFECTTTTTTTT</p>
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -473,14 +196,13 @@
             <div class="review-date">01/10/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Amazing Animation!</h2>
             <p id="text">
               Sousou no Friren's animation is mind-blowing. Can't get enough!
             </p>
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -500,7 +222,6 @@
             <div class="review-date">01/11/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Hooked from Episode 1!</h2>
             <p id="text">
               Sousou no Friren is pure gold. Instantly addicted to the
               storyline!
@@ -508,7 +229,7 @@
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -528,7 +249,6 @@
             <div class="review-date">01/12/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">A Visual Delight!</h2>
             <p id="text">
               Incredible animation quality in Sousou no Friren. Kudos to the
               animators!
@@ -536,7 +256,7 @@
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -556,7 +276,6 @@
             <div class="review-date">01/13/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Captivating Storyline!</h2>
             <p id="text">
               Sousou no Friren had me gripped from the first episode. Can't wait
               for more!
@@ -564,7 +283,7 @@
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -584,14 +303,13 @@
             <div class="review-date">01/14/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Anime of the Year!</h2>
             <p id="text">
               Sousou no Friren deserves all the praise. Truly a masterpiece!
             </p>
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -611,7 +329,6 @@
             <div class="review-date">01/15/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Excellent Character Development!</h2>
             <p id="text">
               Sousou no Friren keeps getting better with each episode. Fantastic
               character arcs!
@@ -619,7 +336,7 @@
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -639,7 +356,6 @@
             <div class="review-date">01/16/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Fire OST!</h2>
             <p id="text">
               Sousou no Friren's OST is on another level. Absolutely love the
               music!
@@ -647,7 +363,7 @@
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -667,7 +383,6 @@
             <div class="review-date">01/17/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Meticulously Crafted Scenes!</h2>
             <p id="text">
               Every scene in Sousou no Friren feels like a visual masterpiece.
               Brilliantly crafted!
@@ -675,7 +390,7 @@
           </div>
         </div>
       </div>
-      <div class="reviews-comment">
+      <div class="comment">
         <div class="left">
           <div class="profile">
             <a href="">
@@ -695,7 +410,6 @@
             <div class="review-date">01/18/2024</div>
           </div>
           <div class="content">
-            <h2 id="title">Edge of My Seat!</h2>
             <p id="text">
               Sousou no Friren has me on the edge of my seat. More, please!
             </p>
@@ -708,4 +422,5 @@
   <div class="series spacement"><div class="border"></div></div>
 </main>
 <script src="/js/series.js"></script>
+<script src="/js/watch.js"></script>
 <%- include('partials/footer') %>

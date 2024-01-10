@@ -172,6 +172,8 @@
     height: 225px;
   }
 
+  .home-preview.next-previous .content-item #thumbnail,
+  .home-preview.next-previous .content-item #big-cover,
   .home-preview.next-previous .content-item #cover {
     width: 150px;
     height: 225px;
@@ -204,6 +206,10 @@
 
   /* mini-banners */
 
+  .home-preview.video {
+    height: 205px;
+  }
+
   .home-preview.video .add-to-watch-list {
     width: 25px;
     height: 25px;
@@ -215,19 +221,23 @@
 
   .home-preview.video .video-preview #thumbnail {
     width: 220px;
-  }
-
-  .home-preview.video {
-    height: 180px;
+    height: 130px;
   }
 
   /* SERIES */
 
+  .series.comments,
   .series.reviews,
   .series.navigation,
-  .series.banner {
+  .series.head {
     display: block;
     padding: 0 0.5em 0 0.5em;
+  }
+
+  /* banner */
+
+  .series.banner {
+    padding: 0;
   }
 
   /* info */
@@ -268,8 +278,6 @@
 
   /* navigation */
 
-  /* SERIES */
-
   /* episodes */
 
   .series.navigation .seasons select {
@@ -304,5 +312,39 @@
 
   .series.navigation .episodes .content-item .info {
     padding: 0;
+  }
+
+  /* reviews */
+
+  .series.comments .header .filter-options,
+  .series.reviews .header .filter-options {
+    flex-direction: column;
+    margin: 40px 0 0 0;
+  }
+
+  .series.comments .write-comment form,
+  .series.reviews .write-review form {
+    width: 100%;
+  }
+
+  .series.comments .write-comment button,
+  .series.reviews .write-review button {
+    margin-right: 0.5em;
+    width: 50%;
+  }
+
+  .series.comments .comment,
+  .series.reviews .comment {
+    display: block;
+  }
+
+  .series.comments .comment .user-info,
+  .series.reviews .comment .user-info {
+    flex-direction: column;
+  }
+
+  .series.comments .comment .spacement,
+  .series.reviews .comment .spacement {
+    display: none !important;
   }
 }

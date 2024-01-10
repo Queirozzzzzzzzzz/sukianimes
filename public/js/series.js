@@ -24,7 +24,7 @@ function adjustInfoTitle() {
   let charCount = h1.innerText.length;
   let maxCharValue = window.innerWidth <= 600 ? 9 : 36;
   let bigFontSize = "3em";
-  let smallFontSize = window.innerWidth <= 600 ? "1em" : "2em";
+  let smallFontSize = window.innerWidth <= 600 ? "1.5em" : "2em";
 
   if (charCount <= maxCharValue) {
     h1.style.fontSize = bigFontSize;
@@ -32,6 +32,8 @@ function adjustInfoTitle() {
     h1.style.fontSize = smallFontSize;
   }
 }
+
+/* Load season */
 
 window.addEventListener("load", adjustInfoTitle);
 
@@ -42,3 +44,24 @@ document
     const url = selectedOption.getAttribute("data-url");
     window.location.href = url;
   });
+
+/* Manage filter floating window */
+
+document.addEventListener("DOMContentLoaded", function () {
+  var filter = document.querySelector(".filter");
+  var body = document.querySelector("body");
+
+  filter.addEventListener("click", function (event) {
+    event.stopPropagation();
+    var filterOptions = document.querySelector(".filter-options");
+    filterOptions.style.display =
+      filterOptions.style.display === "none" ? "" : "none";
+  });
+
+  body.addEventListener("click", function (event) {
+    var filterOptions = document.querySelector(".filter-options");
+    if (event.target !== filter && !filter.contains(event.target)) {
+      filterOptions.style.display = "none";
+    }
+  });
+});

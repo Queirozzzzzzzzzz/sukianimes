@@ -37,5 +37,13 @@ app.get("/series/:series/:season", (req, res) => {
   });
 });
 
+app.get("/series/:series/watch/:season/:episode", (req, res) => {
+  res.render("watch", {
+    series: req.params.series,
+    season: req.params.season,
+    episode: req.params.episode,
+  });
+});
+
 // Listen on port 3592
 app.listen(port, () => console.info(`Listening on port ${port}`));

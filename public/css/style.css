@@ -546,14 +546,29 @@ input:-webkit-autofill {
   height: 375px;
 }
 
-.home-preview.suggestions .content-item {
-  height: 475px;
-  width: 320px;
-}
-
 .home-preview.next-previous .content-item img {
   height: 100%;
   max-width: 100%;
+}
+
+.home-preview.next-previous .content-item #thumbnail {
+  width: 250px;
+  height: 375px;
+}
+
+.home-preview.next-previous .content-item #big-cover {
+  width: 300px;
+  height: 475px;
+}
+
+.home-preview.next-previous .content-item #cover {
+  width: 250px;
+  height: 375px;
+}
+
+.home-preview.suggestions .content-item {
+  height: 475px;
+  width: 320px;
 }
 
 .home-preview.next-previous #next,
@@ -663,6 +678,11 @@ input:-webkit-autofill {
   height: auto;
 }
 
+.home-preview.video .video-preview #thumbnail {
+  width: 280px;
+  height: 160px;
+}
+
 .home-preview.video .video-preview .progress-bar-active,
 .home-preview.video .video-preview .progress-bar-base,
 .home-preview.video .video-preview .video-length {
@@ -749,10 +769,10 @@ input:-webkit-autofill {
   height: 100%;
 }
 
-/* banner */
-
+.series.comments,
 .series.reviews,
 .series.navigation,
+.series.head,
 .series.banner {
   position: relative;
   height: auto;
@@ -760,11 +780,44 @@ input:-webkit-autofill {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 5vh;
 }
 
-.series.banner {
+.series.spacement {
+  margin: 2.5vh 15vw 2.5vh 15vw;
+}
+
+.series.spacement .border {
+  border-top: 0.25em solid var(--gray-second);
+}
+
+/* head */
+
+.series.head {
   margin-top: 5vh;
+}
+
+/* banner */
+
+.series.banner {
+  height: 45vh;
+  justify-content: center;
+}
+
+.series.banner .background-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 50%;
+  filter: blur(5px);
+}
+
+.series.banner picture {
+  position: absolute;
+  height: 100%;
+  z-index: 1;
 }
 
 /* info */
@@ -806,6 +859,18 @@ input:-webkit-autofill {
   margin: 0 3px 0 3px;
   font-size: 1.5em;
   color: var(--gray-second);
+}
+
+.series .info .genres {
+  margin: 0.5em 0 0.5em 0;
+  display: flex;
+}
+
+.series .info .genres .genre {
+  background-color: var(--purple-base);
+  font-size: 0.8em;
+  padding: 0.25em;
+  margin-right: 0.5em;
 }
 
 .series .info .fewer-details,
@@ -1027,13 +1092,114 @@ input:-webkit-autofill {
   color: var(--gray-forth);
 }
 
-/* reviews */
+/* reviews/comments */
 
-.series.reviews .comments {
+.series.comments,
+.series.reviews {
+  display: block;
+}
+
+.series.comments .header,
+.series.reviews .header {
+  display: flex;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+.series.comments .header #spacement,
+.series.reviews .header #spacement {
+  margin: 0 0.25em 0 0.25em;
+  font-size: 1em;
+  color: var(--gray-base);
+}
+
+.series.comments .header img,
+.series.reviews .header img {
+  height: 40px;
+  cursor: pointer;
+  float: right;
+}
+
+.series.comments .header .filter-options,
+.series.reviews .header .filter-options {
+  position: absolute;
+  margin-left: 40px;
+  z-index: 1;
+  background-color: var(--gray-second);
+  display: flex;
+}
+
+.series.comments .header button,
+.series.reviews .header .filter-options button {
+  font-size: 0.8em;
+  padding: 0.25em 1em 0.25em 1em;
+  background-color: var(--gray-second);
+}
+
+.series.comments .header .filter-options button:hover,
+.series.reviews .header .filter-options button:hover {
+  background-color: var(--gray-forth);
+}
+
+.series.comments .write-comment,
+.series.reviews .write-review {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.series.comments .write-comment form,
+.series.reviews .write-review form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.series.comments .write-comment form input,
+.series.reviews .write-review form input,
+.series.comments .write-comment form textarea,
+.series.reviews .write-review form textarea {
+  background-color: var(--gray-base);
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.series.comments .write-comment form textarea,
+.series.reviews .write-review form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.series.comments .write-comment form input,
+.series.reviews .write-review form input {
+  width: 75%;
+}
+
+.series.comments .write-comment form .buttons,
+.series.reviews .write-review form .buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.series.comments .write-comment form button,
+.series.reviews .write-review form button {
+  border-radius: 0;
+  padding: 0.5em;
+  margin-left: 0.5em;
+  font-family: "Lato", sans-serif;
+}
+
+.series.comments .comments,
+.series.reviews .reviews-comments {
   width: 100%;
 }
 
-.series.reviews .comment {
+.series.comments .comment,
+.series.reviews .reviews-comment {
   width: 100%;
   height: auto;
   display: flex;
@@ -1043,27 +1209,148 @@ input:-webkit-autofill {
   justify-content: start;
 }
 
+.series.comments .profile,
 .series.reviews .profile {
   margin-right: 1em;
 }
 
-.series.reviews .comment .profile #logo {
+.series.comments .comment .profile #logo,
+.series.reviews .reviews-comment .profile #logo {
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
 
-.series.reviews .comment .user-info {
+.series.comments .comment .user-info,
+.series.reviews .reviews-comment .user-info {
   display: flex;
 }
 
-.series.reviews .comment .user-info div {
+.series.comments .comment .user-info div,
+.series.reviews .reviews-comment .user-info div {
   display: flex;
   margin-right: 5px;
-  color: var(--gray-forth);
+  color: var(--gray-fifth);
 }
 
-.series.reviews .comment .content {
+.series.comments .comments .load-more,
+.series.reviews .reviews-comments .load-more {
+  padding: 0.25em;
+  font-size: 1.25em;
+  font-family: "Lato", sans-serif;
+  background-color: var(--no-color);
+  border: 0.25em solid var(--purple-base);
+  border-radius: 0;
+}
+
+/* SERIES WATCH */
+
+.series.episode {
+  position: relative;
+  height: 50vh;
+}
+
+.series.episode .video-controls {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+}
+
+.series.episode .video-controls::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(to top, var(--half-black), transparent);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  aspect-ratio: 6 / 1;
+}
+
+.series.episode.paused,
+.series.episode .video-controls:focus-within,
+.series.episode .video-controls:hover {
+  opacity: 1;
+}
+
+.series.episode .video-controls .controls {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.25em;
+  align-items: center;
+}
+
+.series.episode .video-controls::backdrop {
+  background-color: var(--no-color);
+}
+
+.series.episode .video-controls .controls button {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.series.episode button:hover {
+  opacity: 1;
+}
+
+.series.episode.full-screen .full-screen-in-icon,
+.series.episode.picture-in-picture .picture-in-picture-in-icon,
+.series.episode.paused .paused-icon {
+  display: none;
+}
+
+.series.episode:not(.full-screen) .full-screen-out-icon,
+.series.episode:not(.picture-in-picture) .picture-in-picture-out-icon,
+.series.episode:not(.paused) .play-icon {
+  display: none;
+}
+
+.series.episode .volume-container {
+  display: flex;
+  align-items: center;
+}
+
+.series.episode .volume-container .slider {
+  width: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.series.episode .volume-container:focus-within .slider,
+.series.episode .volume-container:hover .slider {
+  width: 100px;
+  transform: scaleX(1);
+}
+
+.series.episode .volume-muted-icon,
+.series.episode .volume-high-icon,
+.series.episode .volume-low-icon {
+  display: none;
+}
+
+.series.episode[data-volume-levels="mute"] .volume-mute-icon,
+.series.episode[data-volume-levels="low"] .volume-low-icon,
+.series.episode[data-volume-levels="high"] .volume-high-icon {
+  display: block;
+}
+
+.series.episode .video {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
 }
 
 /* ATTRIBUTES */
