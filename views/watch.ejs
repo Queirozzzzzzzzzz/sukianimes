@@ -1,45 +1,69 @@
 <%- include('partials/head') %> <%- include('partials/header') %>
 <main>
-  <div class="series episode paused">
+  <div class="series episode paused captions" data-volume-level="high">
     <div class="video-controls">
       <div class="controls">
-        <button class="play-pause-btn">
-          <img class="play-icon" src="/svg/play.svg" />
-          <img class="paused-icon" src="/svg/pause.svg" />
-        </button>
-        <div class="volume-container">
-          <button class="mute-btn">
-            <img class="volume-mute-icon" src="/svg/0-volume.svg" />
-            <img class="volume-low-icon" src="/svg/50-volume.svg" />
-            <img class="volume-high-icon" src="/svg/100-volume.svg" />
+        <div class="left">
+          <button class="play-pause-btn">
+            <img class="play-icon" src="/svg/play.svg" />
+            <img class="paused-icon" src="/svg/pause.svg" />
           </button>
-          <input
-            class="slider"
-            type="range"
-            min="0"
-            max="1"
-            step="any"
-            value="0.7"
-          />
+          <div class="volume-container">
+            <button class="mute-btn">
+              <img class="volume-mute-icon" src="/svg/0-volume.svg" />
+              <img class="volume-low-icon" src="/svg/50-volume.svg" />
+              <img class="volume-high-icon" src="/svg/100-volume.svg" />
+            </button>
+            <input
+              class="slider"
+              type="range"
+              min="0"
+              max="1"
+              step="any"
+              value="0.7"
+            />
+          </div>
+          <div class="duration-container">
+            <div class="current-time">00:00</div>
+            /
+            <div class="total-time"></div>
+          </div>
+          <button class="backward-btn"><img src="/svg/backward.svg" /></button>
+          <button class="forward-btn"><img src="/svg/forward.svg" /></button>
         </div>
-        <button class="picture-in-picture-btn">
-          <img
-            class="picture-in-picture-in-icon"
-            src="/svg/picture-in-picture-in.svg"
-          />
-          <img
-            class="picture-in-picture-out-icon"
-            src="/svg/picture-in-picture-out.svg"
-          />
-        </button>
-        <button class="full-screen-btn">
-          <img class="full-screen-in-icon" src="/svg/full-screen-in.svg" />
-          <img class="full-screen-out-icon" src="/svg/full-screen-out.svg" />
-        </button>
+        <div class="right">
+          <div class="quality wide">
+            <button id="choose-quality">1080p</button>
+            <div class="options" style="display: none">
+              <button class="full-hd-btn">1080p</button>
+              <button class="hd-btn">720p</button>
+              <button class="sd-btn">480p</button>
+            </div>
+          </div>
+          <button class="captions-btn">
+            <img src="/svg/caption.svg" />
+          </button>
+          <button class="speed-btn wide">1.75x</button>
+          <button class="picture-in-picture-btn">
+            <img
+              class="picture-in-picture-in-icon"
+              src="/svg/picture-in-picture-in.svg"
+            />
+            <img
+              class="picture-in-picture-out-icon"
+              src="/svg/picture-in-picture-out.svg"
+            />
+          </button>
+          <button class="full-screen-btn">
+            <img class="full-screen-in-icon" src="/svg/full-screen-in.svg" />
+            <img class="full-screen-out-icon" src="/svg/full-screen-out.svg" />
+          </button>
+        </div>
       </div>
     </div>
     <video class="video">
       <source src="/videos/gseryh.mp4" />
+      <track kind="subtitles" srclang="en" src="/videos/gseryh-en.vtt" />
       This browser don't support .mp4 files.
     </video>
   </div>
