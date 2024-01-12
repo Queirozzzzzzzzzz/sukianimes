@@ -2,6 +2,12 @@
 <main>
   <div class="series episode paused captions" data-volume-level="high">
     <div class="video-controls">
+      <div class="timeline-container">
+        <div class="timeline">
+          <div class="thumb-indicator"></div>
+        </div>
+      </div>
+      <div class="play-pause-area"></div>
       <div class="controls">
         <div class="left">
           <button class="play-pause-btn">
@@ -40,10 +46,10 @@
               <button class="sd-btn">480p</button>
             </div>
           </div>
+          <button class="speed-btn wide">1x</button>
           <button class="captions-btn">
             <img src="/svg/caption.svg" />
           </button>
-          <button class="speed-btn wide">1.75x</button>
           <button class="picture-in-picture-btn">
             <img
               class="picture-in-picture-in-icon"
@@ -69,39 +75,24 @@
   </div>
   <div class="series head">
     <div class="info">
-      <h1>Frieren: Beyond Journey's End</h1>
+      <a id="series-link" href="/series/sousou-no-frieren/1"
+        >Frieren: Beyond Journey's End</a
+      >
+      <h1>S1 E6 - The Hero of the Village</h1>
       <div class="rating">
-        <select name="series-grade" id="series-grade">
-          <option value="undefined">Undefined</option>
-          <option value="10">10. Masterpiece</option>
-          <option value="9">9. Outstanding</option>
-          <option value="8">8. Excellent</option>
-          <option value="7">7. Very Good</option>
-          <option value="6">6. Good</option>
-          <option value="5">5. Decent</option>
-          <option value="4">4. Average</option>
-          <option value="3">3. Below Average</option>
-          <option value="2">2. Mediocre</option>
-          <option value="1">1. Trash</option>
+        <select name="episode-grade" id="episode-grade">
+          <option value="undefined">Rating</option>
+          <option value="5">5. Excellent</option>
+          <option value="4">4. Good</option>
+          <option value="3">3. Fair</option>
+          <option value="2">2. Bad</option>
+          <option value="1">1. Poor</option>
         </select>
-        <p id="spacement">|</p>
-        <p>Average rating: <strong>9.4 (82k)</strong></p>
-        <p id="spacement">|</p>
-        <p>1218 reviews</p>
-      </div>
-      <div class="actions">
-        <button class="watch-list">
-          <img src="/svg/bookmark.svg" />WATCHLIST
-        </button>
-        <a href="" class="playlist"><img src="/svg/add.svg" />PLAYLIST</a>
       </div>
       <p>
-        After the party of heroes defeated the Demon King, they restored peace
-        to the land and returned to lives of solitude. Generations pass, and the
-        elven mage Frieren comes face to face with humanity’s mortality. She
-        takes on a new apprentice and promises to fulfill old friends’ dying
-        wishes. Can an elven mind make peace with the nature of life and death?
-        Frieren embarks on her quest to find out.
+        The world celebrates the Demon King's defeat at the hands of the Hero
+        and his companions. Now that their great adventure is over, what will
+        Frieren the mage do next?
       </p>
       <div class="details">
         <div class="genres">
@@ -132,27 +123,25 @@
       <div class="fewer-details" style="display: none">Fewer details...</div>
     </div>
     <div class="episode">
-      <a href="/watch/sousou-no-frieren/1/1" class="preview">
+      <a href="/series/sousou-no-frieren/watch/1/1" class="preview">
         <img
           id="episode-preview"
-          src="/img/previews/series-sousou-no-frieren-preview-ep-6.webp"
+          src="/img/previews/series-sousou-no-frieren-preview-ep-7.webp"
         />
         <img id="play-preview" src="/svg/play.svg" />
       </a>
       <button
         onclick="window.location.href='/series/sousou-no-frieren/watch/1/6'"
       >
-        <img src="/svg/play.svg" />CONTINUE WATCHING S1 E6
+        <img src="/svg/play.svg" />NEXT EPISODE S1 E7
       </button>
     </div>
   </div>
   <div class="series spacement"><div class="border"></div></div>
   <div class="series comments">
     <div class="write-comment">
-      <h2>Write your own review</h2>
+      <h2>Write a comment</h2>
       <form action="">
-        <label for="review-title">Title</label>
-        <input type="text" name="review-title" id="review-title" />
         <textarea
           name="write-review-textarea"
           id="write-review-textarea"
@@ -165,11 +154,11 @@
       </form>
     </div>
     <div class="header">
-      <div class="comments-count">98 comments</div>
+      <div class="comments-count">7 comments</div>
       <div id="spacement">|</div>
       <div class="filter">
         <img src="/svg/filter.svg" />
-        <div class="filter-options" style="display: none">
+        <div class="options" style="display: none">
           <button id="newest">Newest</button>
           <button id="oldest">Oldest</button>
         </div>
@@ -189,14 +178,29 @@
             <div class="username">
               <a href=""><p>Osvaldo</p></a>
             </div>
-            <div class="user-reviews">(78 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 10 (Masterpiece)</div>
-            <div class="spacement">|</div>
+
             <div class="review-date">01/09/2024</div>
           </div>
           <div class="content">
-            <p id="text">PERFECTTTTTTTT</p>
+            <p id="text">perfect</p>
+            <div class="actions">
+              <div class="like">
+                <img src="/svg/like.svg" />
+                <p>1</p>
+              </div>
+              <div class="dislike">
+                <img src="/svg/dislike.svg" />
+                <p>0</p>
+              </div>
+              <div class="more">
+                <img src="/svg/more.svg" />
+                <p>More</p>
+                <div class="options" style="display: none">
+                  <p id="spoiler">It's a spoiler</p>
+                  <p id="report">Report</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -213,16 +217,29 @@
             <div class="username">
               <a href=""><p>Alex_Rocks23</p></a>
             </div>
-            <div class="user-reviews">(42 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 9 (Outstanding)</div>
-            <div class="spacement">|</div>
+
             <div class="review-date">01/10/2024</div>
           </div>
           <div class="content">
-            <p id="text">
-              Sousou no Friren's animation is mind-blowing. Can't get enough!
-            </p>
+            <p id="text">nice!</p>
+            <div class="actions">
+              <div class="like">
+                <img src="/svg/like.svg" />
+                <p>1</p>
+              </div>
+              <div class="dislike">
+                <img src="/svg/dislike.svg" />
+                <p>0</p>
+              </div>
+              <div class="more">
+                <img src="/svg/more.svg" />
+                <p>More</p>
+                <div class="options" style="display: none">
+                  <p id="spoiler">It's a spoiler</p>
+                  <p id="report">Report</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -239,17 +256,29 @@
             <div class="username">
               <a href=""><p>AnimeFanatic99</p></a>
             </div>
-            <div class="user-reviews">(56 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 10 (Masterpiece)</div>
-            <div class="spacement">|</div>
+
             <div class="review-date">01/11/2024</div>
           </div>
           <div class="content">
-            <p id="text">
-              Sousou no Friren is pure gold. Instantly addicted to the
-              storyline!
-            </p>
+            <p id="text">never get bored of the op</p>
+            <div class="actions">
+              <div class="like">
+                <img src="/svg/like.svg" />
+                <p>1</p>
+              </div>
+              <div class="dislike">
+                <img src="/svg/dislike.svg" />
+                <p>0</p>
+              </div>
+              <div class="more">
+                <img src="/svg/more.svg" />
+                <p>More</p>
+                <div class="options" style="display: none">
+                  <p id="spoiler">It's a spoiler</p>
+                  <p id="report">Report</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -266,17 +295,29 @@
             <div class="username">
               <a href=""><p>MysteryViewer42</p></a>
             </div>
-            <div class="user-reviews">(23 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 8 (Excellent)</div>
-            <div class="spacement">|</div>
+
             <div class="review-date">01/12/2024</div>
           </div>
           <div class="content">
-            <p id="text">
-              Incredible animation quality in Sousou no Friren. Kudos to the
-              animators!
-            </p>
+            <p id="text">tbh, one of my favorite episodes</p>
+            <div class="actions">
+              <div class="like">
+                <img src="/svg/like.svg" />
+                <p>1</p>
+              </div>
+              <div class="dislike">
+                <img src="/svg/dislike.svg" />
+                <p>0</p>
+              </div>
+              <div class="more">
+                <img src="/svg/more.svg" />
+                <p>More</p>
+                <div class="options" style="display: none">
+                  <p id="spoiler">It's a spoiler</p>
+                  <p id="report">Report</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -293,17 +334,29 @@
             <div class="username">
               <a href=""><p>SakuraDreamer</p></a>
             </div>
-            <div class="user-reviews">(34 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 9 (Outstanding)</div>
-            <div class="spacement">|</div>
+
             <div class="review-date">01/13/2024</div>
           </div>
           <div class="content">
-            <p id="text">
-              Sousou no Friren had me gripped from the first episode. Can't wait
-              for more!
-            </p>
+            <p id="text">ed gets better every episode</p>
+            <div class="actions">
+              <div class="like">
+                <img src="/svg/like.svg" />
+                <p>1</p>
+              </div>
+              <div class="dislike">
+                <img src="/svg/dislike.svg" />
+                <p>0</p>
+              </div>
+              <div class="more">
+                <img src="/svg/more.svg" />
+                <p>More</p>
+                <div class="options" style="display: none">
+                  <p id="spoiler">It's a spoiler</p>
+                  <p id="report">Report</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -320,16 +373,29 @@
             <div class="username">
               <a href=""><p>EpicOtaku98</p></a>
             </div>
-            <div class="user-reviews">(45 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 10 (Masterpiece)</div>
-            <div class="spacement">|</div>
+
             <div class="review-date">01/14/2024</div>
           </div>
           <div class="content">
-            <p id="text">
-              Sousou no Friren deserves all the praise. Truly a masterpiece!
-            </p>
+            <p id="text">so chill</p>
+            <div class="actions">
+              <div class="like">
+                <img src="/svg/like.svg" />
+                <p>1</p>
+              </div>
+              <div class="dislike">
+                <img src="/svg/dislike.svg" />
+                <p>0</p>
+              </div>
+              <div class="more">
+                <img src="/svg/more.svg" />
+                <p>More</p>
+                <div class="options" style="display: none">
+                  <p id="spoiler">It's a spoiler</p>
+                  <p id="report">Report</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -346,97 +412,29 @@
             <div class="username">
               <a href=""><p>CuriousMind23</p></a>
             </div>
-            <div class="user-reviews">(67 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 9 (Outstanding)</div>
-            <div class="spacement">|</div>
+
             <div class="review-date">01/15/2024</div>
           </div>
           <div class="content">
-            <p id="text">
-              Sousou no Friren keeps getting better with each episode. Fantastic
-              character arcs!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="comment">
-        <div class="left">
-          <div class="profile">
-            <a href="">
-              <img id="logo" src="/img/previews/series-reviews-logo-1.webp" />
-            </a>
-          </div>
-        </div>
-        <div class="right">
-          <div class="user-info">
-            <div class="username">
-              <a href=""><p>GamingGeek24</p></a>
+            <p id="text">waiting for a bad episode</p>
+            <div class="actions">
+              <div class="like">
+                <img src="/svg/like.svg" />
+                <p>1</p>
+              </div>
+              <div class="dislike">
+                <img src="/svg/dislike.svg" />
+                <p>0</p>
+              </div>
+              <div class="more">
+                <img src="/svg/more.svg" />
+                <p>More</p>
+                <div class="options" style="display: none">
+                  <p id="spoiler">It's a spoiler</p>
+                  <p id="report">Report</p>
+                </div>
+              </div>
             </div>
-            <div class="user-reviews">(29 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 8 (Excellent)</div>
-            <div class="spacement">|</div>
-            <div class="review-date">01/16/2024</div>
-          </div>
-          <div class="content">
-            <p id="text">
-              Sousou no Friren's OST is on another level. Absolutely love the
-              music!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="comment">
-        <div class="left">
-          <div class="profile">
-            <a href="">
-              <img id="logo" src="/img/previews/series-reviews-logo-1.webp" />
-            </a>
-          </div>
-        </div>
-        <div class="right">
-          <div class="user-info">
-            <div class="username">
-              <a href=""><p>FilmBuff77</p></a>
-            </div>
-            <div class="user-reviews">(38 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 9 (Outstanding)</div>
-            <div class="spacement">|</div>
-            <div class="review-date">01/17/2024</div>
-          </div>
-          <div class="content">
-            <p id="text">
-              Every scene in Sousou no Friren feels like a visual masterpiece.
-              Brilliantly crafted!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="comment">
-        <div class="left">
-          <div class="profile">
-            <a href="">
-              <img id="logo" src="/img/previews/series-reviews-logo-1.webp" />
-            </a>
-          </div>
-        </div>
-        <div class="right">
-          <div class="user-info">
-            <div class="username">
-              <a href=""><p>AdventureSeeker45</p></a>
-            </div>
-            <div class="user-reviews">(51 reviews)</div>
-            <div class="spacement">|</div>
-            <div class="rating">Rated 10 (Masterpiece)</div>
-            <div class="spacement">|</div>
-            <div class="review-date">01/18/2024</div>
-          </div>
-          <div class="content">
-            <p id="text">
-              Sousou no Friren has me on the edge of my seat. More, please!
-            </p>
           </div>
         </div>
       </div>

@@ -19,6 +19,8 @@ function activateFewerDetails() {
 moreDetailsElement.addEventListener("click", activateMoreDetails);
 fewerDetailsElement.addEventListener("click", activateFewerDetails);
 
+window.addEventListener("load", adjustInfoTitle);
+
 function adjustInfoTitle() {
   let h1 = document.querySelector(".series .info h1");
   let charCount = h1.innerText.length;
@@ -35,33 +37,43 @@ function adjustInfoTitle() {
 
 /* Load season */
 
-window.addEventListener("load", adjustInfoTitle);
-
-document
-  .getElementById("series-seasons")
-  .addEventListener("change", function () {
+var element = document.getElementById("series-seasons");
+if (element !== null) {
+  element.addEventListener("change", function () {
     var selectedOption = this.options[this.selectedIndex];
     const url = selectedOption.getAttribute("data-url");
-    window.location.href = url;
+    if (url !== null) {
+      window.location.href = url;
+    }
   });
+}
 
 /* Manage filter floating window */
 
 document.addEventListener("DOMContentLoaded", function () {
-  var filter = document.querySelector(".filter");
-  var body = document.querySelector("body");
+  var floatingWindows = document.querySelectorAll(".filter, .content .more");
+  console.log(floatingWindows);
 
-  filter.addEventListener("click", function (event) {
-    event.stopPropagation();
-    var filterOptions = document.querySelector(".filter-options");
-    filterOptions.style.display =
-      filterOptions.style.display === "none" ? "" : "none";
+  floatingWindows.forEach(function (floatingWindow) {
+    floatingWindow.addEventListener("click", function (event) {
+      event.stopPropagation();
+      var filterOptions = floatingWindow.querySelector(".options");
+      filterOptions.style.display =
+        filterOptions.style.display === "none" ? "" : "none";
+    });
   });
 
+  var body = document.querySelector("body");
+
   body.addEventListener("click", function (event) {
-    var filterOptions = document.querySelector(".filter-options");
-    if (event.target !== filter && !filter.contains(event.target)) {
-      filterOptions.style.display = "none";
-    }
+    floatingWindows.forEach(function (floatingWindow) {
+      var filterOptions = floatingWindow.querySelector(".options");
+      if (
+        event.target !== floatingWindow &&
+        !floatingWindow.contains(event.target)
+      ) {
+        filterOptions.style.display = "none";
+      }
+    });
   });
 });
