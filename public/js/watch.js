@@ -118,12 +118,21 @@ video.addEventListener("volumechange", () => {
 
 // Duration
 video.addEventListener("loadeddata", () => {
-  totalTimeElement.textContent = formatDuration(video.duration);
+  if (!video.duration) {
+    totalTimeElement.textContent = "00:00";
+  } else {
+    totalTimeElement.textContent = formatDuration(video.duration);
+  }
 });
 
 video.addEventListener("timeupdate", () => {
-  currentTimeElement.textContent = formatDuration(video.currentTime);
-  totalTimeElement.textContent = formatDuration(video.duration);
+  if (!video.duration) {
+    currentTimeElement.textContent = "00:00";
+    totalTimeElement.textContent = "00:00";
+  } else {
+    currentTimeElement.textContent = formatDuration(video.currentTime);
+    totalTimeElement.textContent = formatDuration(video.duration);
+  }
 
   const percent = video.currentTime / video.duration;
   timelineContainer.style.setProperty("--progress-position", percent);
