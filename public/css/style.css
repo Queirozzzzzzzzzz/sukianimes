@@ -1577,6 +1577,7 @@ a#history,
 a#playlists,
 a#watchlater {
   padding: 1rem;
+  border-bottom: 3px solid var(--gray-base);
 }
 
 a#history:hover,
@@ -2092,6 +2093,7 @@ a#watchlater:hover {
   .list .series-container {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
   }
 
   .list .series-container .content-item {
