@@ -45,5 +45,17 @@ app.get("/series/:series/watch/:season/:episode", (req, res) => {
   });
 });
 
+app.get("/watchlater", (req, res) => {
+  res.render("watchlater");
+});
+
+app.get("/playlists", (req, res) => {
+  res.render("playlists");
+});
+
+app.get("/history", (req, res) => {
+  res.render("history");
+});
+
 // Listen on port 3592
 app.listen(port, () => console.info(`Listening on port ${port}`));
