@@ -74,10 +74,14 @@ function showControls() {
 
 // Play/Pause
 
-playPauseBtn.addEventListener("click", () => togglePlay());
-playPauseArea.addEventListener("click", () => togglePlay());
+playPauseBtn.addEventListener("click", () => togglePlay(false));
+playPauseArea.addEventListener("click", () => togglePlay(true));
 
-function togglePlay() {
+function togglePlay(isArea) {
+  if (window.innerWidth <= 600 && isArea) {
+    return;
+  }
+
   video.paused ? video.play() : video.pause();
 }
 
