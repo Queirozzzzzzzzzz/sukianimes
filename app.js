@@ -53,6 +53,10 @@ app.get("/playlists", (req, res) => {
   res.render("playlists");
 });
 
+app.get("/playlist/:playlist", (req, res) => {
+  res.render("playlist");
+});
+
 app.get("/history", (req, res) => {
   res.render("history");
 });
