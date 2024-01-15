@@ -10,8 +10,7 @@
     "start": "node app.js",
     "start:dev": "nodemon app.js",
     "lint:check": "prettier --check .",
-    "lint:fix": "prettier --write .",
-    "lint:ejs": "prettier --plugin=prettier-plugin-ejs --write ."
+    "lint:fix": "prettier --plugin=prettier-plugin-ejs --write ."
   },
   "author": "",
   "license": "MIT",
