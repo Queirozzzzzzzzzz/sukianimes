@@ -8,6 +8,7 @@ const currentTimeElement = document.querySelector(".current-time");
 const totalTimeElement = document.querySelector(".total-time");
 const forwardBtn = document.querySelector(".forward-btn");
 const backwardBtn = document.querySelector(".backward-btn");
+const configurationsBtn = document.querySelector(".configurations");
 const captionsBtn = document.querySelector(".captions-btn");
 const speedBtn = document.querySelector(".speed-btn");
 const pictureInPictureBtn = document.querySelector(".picture-in-picture-btn");
@@ -178,7 +179,7 @@ function skip(duration) {
 
 // Quality
 
-var otherButtons = document.querySelector(".options");
+var otherButtons = document.querySelector(".quality-options");
 
 qualityBtn.onclick = function () {
   if (otherButtons.style.display !== "none") {

@@ -1,0 +1,36 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main>
+  <div class="account">
+    <div class="top">
+      <div class="profile">
+        <img src="/img/previews/series-reviews-logo-1.webp" />
+      </div>
+      <div class="section-title">
+        <h1>Account</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <ul>
+          <a href="/account/profile"><li>Profile</li></a>
+          <a href="/account/signature"><li>Signature</li></a>
+          <a href="/account/preferences"><li>Preferences</li></a>
+          <a href="/account/change-email"><li>Change Email</li></a>
+          <a href="/account/change-password"><li>Change Password</li></a>
+          <a href="/account/order-history"><li>Order History</li></a>
+          <a href="/account/payment-methods"><li>Payment Methods</li></a>
+        </ul>
+      </div>
+      <div class="right">
+        <% if (section === 'profile') { %>
+        <div class="profile">
+          <img src="/img/previews/series-reviews-logo-1.webp" />
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</main>
+<script src="/js/home.js"></script>
+<%- include('partials/footer') %>

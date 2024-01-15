@@ -61,5 +61,9 @@ app.get("/history", (req, res) => {
   res.render("history");
 });
 
+app.get("/account/:section", (req, res) => {
+  res.render("account", { section: req.params.section });
+});
+
 // Listen on port 3592
 app.listen(port, () => console.info(`Listening on port ${port}`));

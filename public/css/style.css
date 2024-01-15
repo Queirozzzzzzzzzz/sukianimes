@@ -1463,21 +1463,21 @@ input[type="range"] {
   position: relative;
 }
 
-.series.episode .quality .options {
+.series.episode .quality-options {
   position: absolute;
   flex-direction: column;
-  bottom: 30px;
+  bottom: 60px;
   width: 50px;
   padding: 0 0.25rem 0 0;
 }
 
-.series.episode .quality .options button {
+.series.episode .quality-options button {
   width: 60px;
   padding: 0.25rem;
   background-color: var(--half-black);
 }
 
-.series.episode .quality .options button:hover {
+.series.episode .quality-options button:hover {
   width: 70px;
   background-color: var(--gray-third);
 }
@@ -1513,12 +1513,11 @@ input[type="range"] {
 .series.episode .timeline-container .timeline::before {
   content: "";
   position: absolute;
-
-  left: 0;
   bottom: 0;
+  left: 0;
   height: 100%;
   right: calc(100% - var(--preview-position) * 100%);
-  background-color: var(--gray-forth);
+  background-color: var(--gray-third);
 }
 
 .series.episode .timeline-container .timeline::after {
@@ -1765,6 +1764,66 @@ a#watchlater:hover {
 
 .list.playlists .playlists-container .content-item .right img:hover {
   opacity: 100%;
+}
+
+/* ACCOUNT */
+
+.account {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  width: 75vw;
+  background-color: var(--gray-second);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.account .top {
+  height: 10%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.account .top .profile {
+  width: 25%;
+  height: 100%;
+}
+
+.account .top .profile img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.account .top .section-title {
+  overflow: hidden;
+  width: 50%;
+  background-color: var(--half-black);
+  text-align: center;
+}
+
+.account .container {
+  height: 100%;
+  display: flex;
+}
+
+.account .left {
+  width: 30%;
+}
+
+.account .left ul {
+  margin: 1rem;
+}
+.account .left ul li {
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.account .right {
+  width: 70%;
 }
 
 /* RESPONSIVE */

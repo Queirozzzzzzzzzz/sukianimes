@@ -1,4 +1,5 @@
-<%- include('partials/head') %> <%- include('partials/header') %>
+<%- include('partials/head') %>
+<%- include('partials/header') %>
 <main>
   <div class="series episode paused captions" data-volume-level="high">
     <div class="video-controls">
@@ -40,16 +41,16 @@
         <div class="right">
           <div class="quality wide">
             <button id="choose-quality">1080p</button>
-            <div class="options" style="display: none">
-              <button class="full-hd-btn">1080p</button>
-              <button class="hd-btn">720p</button>
-              <button class="sd-btn">480p</button>
-            </div>
           </div>
-          <button class="speed-btn wide">1x</button>
+          <div class="quality-options" style="display: none">
+            <button class="full-hd-btn">1080p</button>
+            <button class="hd-btn">720p</button>
+            <button class="sd-btn">480p</button>
+          </div>
           <button class="captions-btn">
             <img src="/svg/caption.svg" />
           </button>
+          <button class="speed-btn wide">1x</button>
           <button class="picture-in-picture-btn">
             <img
               class="picture-in-picture-in-icon"
@@ -70,6 +71,7 @@
     <video class="video">
       <source src="/videos/gseryh.mp4" />
       <track kind="subtitles" srclang="en" src="/videos/gseryh-en.vtt" />
+      <track kind="subtitles" srclang="jp" src="/videos/gseryh-jp.vtt" />
       This browser don't support .mp4 files.
     </video>
   </div>
