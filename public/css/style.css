@@ -1962,6 +1962,7 @@ a#watchlater:hover {
     margin: 0.25rem 1rem 0.25rem 0;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   /* NAVBAR */
