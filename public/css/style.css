@@ -1780,56 +1780,190 @@ a#watchlater:hover {
   transform: translate(-50%, -50%);
 }
 
-.account .top {
-  height: 10%;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+.account .active {
+  color: var(--purple-base);
 }
 
-.account .top .profile {
+.account .top {
+  height: calc(75vh * 0.15);
+  overflow: hidden;
+  padding: 1rem;
+  display: flex;
+}
+
+.account .top .left {
+  width: 20%;
+  height: 100%;
+}
+
+.account .top .left .icon {
   width: 25%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.account .top .profile img {
-  height: 100%;
+.account .top .left .icon img {
+  height: 50px;
   border-radius: 50%;
 }
 
-.account .top .section-title {
+.account .top .right {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.account .top .right .section-title {
   overflow: hidden;
   width: 50%;
   background-color: var(--half-black);
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .account .container {
-  height: 100%;
+  height: 90%;
   display: flex;
 }
 
-.account .left {
-  width: 30%;
+.account .container .right,
+.account .container .left {
+  height: calc(75vh * 0.85);
+  background-color: var(--half-black);
 }
 
-.account .left ul {
+.account .container .left {
+  width: 20%;
+}
+
+.account .container .left ul {
   margin: 1rem;
 }
-.account .left ul li {
+.account .container .left ul li {
   padding: 0.5rem 0 0.5rem 0;
 }
 
-.account .right {
-  width: 70%;
+.account .container .right {
+  width: 80%;
+  background-color: var(--black);
+}
+
+/* right container */
+
+.account .container .right .container {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account .container .right .container img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.account .container .right .container h2,
+.account .container .right .container p {
+  margin-top: 1rem;
+}
+
+.account .container .right .container a {
+  background-color: var(--purple-base);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.account .container .right .container form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+  overflow: hidden;
+}
+
+.account .container .right .container form p {
+  line-height: 1rem;
+  margin: 0;
+}
+
+.account .container .right .container table,
+.account .container .right .container button,
+.account .container .right .container input,
+.account .container .right .container select {
+  background-color: var(--gray-second);
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+
+.account .container .right .container button {
+  background-color: var(--purple-base);
+  padding: 0.5rem 2rem;
+}
+
+.account .container .right .container h5 {
+  color: var(--gray-third);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.account .container .right .container table {
+  text-align: center;
+}
+
+.account .container .right .container table th {
+  background-color: var(--half-black);
+}
+
+.account .container .right .container ul {
+  background-color: var(--gray-second);
+  padding: 1rem;
+}
+
+.account .container .right .container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.account .container .right .container li a {
+  margin: 0 0 0 1.5rem;
+  padding: 0.25rem 1rem;
 }
 
 /* RESPONSIVE */
 
 /* Mobile styles */
 @media screen and (max-width: 600px) {
+  table thead {
+    display: none;
+  }
+
+  table td {
+    display: flex;
+  }
+
+  table td::before {
+    content: attr(label);
+    font-weight: bold;
+    width: 120px;
+    min-width: 120px;
+    background-color: var(--half-black);
+    margin: 0.25rem 1rem 0.25rem 0;
+    display: flex;
+    align-items: center;
+  }
+
   /* NAVBAR */
 
   .navbar-items {
@@ -2281,6 +2415,61 @@ a#watchlater:hover {
   .list .series-container .content-item .info h4 {
     -webkit-line-clamp: 2;
   }
+
+  /* ACCOUNT */
+
+  .account {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  .account .top {
+    padding: 0.25rem;
+  }
+
+  .account .top .left {
+    display: none;
+  }
+
+  .account .top .right {
+    width: 100%;
+  }
+
+  .account .top .right .section-title {
+    width: 100%;
+  }
+
+  .account .container {
+    flex-direction: column;
+  }
+
+  .account .container .right,
+  .account .container .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .account .container .right .container form {
+    width: 80%;
+  }
+
+  .account .container .right .container table {
+    width: 90%;
+  }
+
+  /* right container */
+
+  .account .container .right .container {
+    height: 100%;
+    margin: 1rem 0 1rem 0;
+  }
 }
 
 /* Tablet and 90° mobile styles */
@@ -2657,6 +2846,53 @@ a#watchlater:hover {
   .list .series-container .content-item .info .bottom {
     align-items: end;
     line-height: 0.8rem;
+  }
+
+  /* ACCOUNT */
+
+  .account {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+
+  .account .top {
+    padding: 0.25rem;
+  }
+
+  .account .top .left {
+    display: none;
+  }
+
+  .account .top .right {
+    width: 100%;
+  }
+
+  .account .top .right .section-title {
+    width: 100%;
+  }
+
+  .account .container {
+    flex-direction: column;
+  }
+
+  .account .container .right,
+  .account .container .left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* right container */
+
+  .account .container .right .container {
+    height: 100%;
+    margin: 1rem 0 1rem 0;
   }
 }
 

@@ -3,34 +3,196 @@
 <main>
   <div class="account">
     <div class="top">
-      <div class="profile">
-        <img src="/img/previews/series-reviews-logo-1.webp" />
+      <div class="left">
+        <div class="icon">
+          <img src="/svg/configuration.svg" />
+        </div>
       </div>
-      <div class="section-title">
-        <h1>Account</h1>
+      <div class="right">
+        <div class="section-title">
+          <% if (section === 'profile') { %>
+          <h1>Profile</h1>
+          <% } %>
+          <% if (section === 'subscription') { %>
+          <h1>Subscription</h1>
+          <% } %>
+          <% if (section === 'preferences') { %>
+          <h1>Preferences</h1>
+          <% } %>
+          <% if (section === 'change-email') { %>
+          <h1>Change Email</h1>
+          <% } %>
+          <% if (section === 'change-password') { %>
+          <h1>Change Password</h1>
+          <% } %>
+          <% if (section === 'order-history') { %>
+          <h1>Order History</h1>
+          <% } %>
+          <% if (section === 'payment-methods') { %>
+          <h1>Payment Methods</h1>
+          <% } %>
+        </div>
       </div>
     </div>
     <div class="container">
       <div class="left">
         <ul>
-          <a href="/account/profile"><li>Profile</li></a>
-          <a href="/account/signature"><li>Signature</li></a>
-          <a href="/account/preferences"><li>Preferences</li></a>
-          <a href="/account/change-email"><li>Change Email</li></a>
-          <a href="/account/change-password"><li>Change Password</li></a>
-          <a href="/account/order-history"><li>Order History</li></a>
-          <a href="/account/payment-methods"><li>Payment Methods</li></a>
+          <% ['profile', 'subscription', 'preferences', 'change-email', 'change-password', 'order-history', 'payment-methods'].forEach(function(item) { %>
+          <a href="/account/<%= item %>">
+            <li class="<%= section === item ? 'active' : '' %>">
+              <%= item.split('-').map(function(part) {
+                  return part.charAt(0).toUpperCase() + part.slice(1);
+                }).join(' ') %>
+            </li>
+          </a>
+          <% }) %>
         </ul>
       </div>
       <div class="right">
         <% if (section === 'profile') { %>
-        <div class="profile">
-          <img src="/img/previews/series-reviews-logo-1.webp" />
+        <div class="container">
+          <div class="image-upload">
+            <label for="file-input">
+              <img src="/img/previews/series-reviews-logo-1.webp" />
+            </label>
+            <input id="file-input" type="file" style="display: none" />
+          </div>
+          <h2 id="username">My Username</h2>
+          <p id="email"><strong>Email:</strong> myemail@email.com</p>
+          <p id="phone-number">
+            <strong>Phone number:</strong>+00 (00) 00000-0000
+          </p>
+        </div>
+        <% } %>
+        <% if (section === 'subscription') { %>
+        <div class="container">
+          <img src="/svg/level-0-member.svg" />
+          <h2 id="subscription">Free</h2>
+          <p id="remaining-time">You currently don't have a subscription</p>
+          <a href="/offer-upgrade" id="offer-upgrade">Upgrade subscription</a>
+        </div>
+        <% } %>
+        <% if (section === 'preferences') { %>
+        <div class="container">
+          <form action="" method="post">
+            <h2 id="language-title">Language</h2>
+            <select name="language" id="language">
+              <option value="en">English</option>
+              <option value="pt-br">Português (Brasil)</option>
+            </select>
+            <h2 id="subtitles-title">Subtitles</h2>
+            <select name="subtitles" id="subtitles">
+              <option value="en">English</option>
+              <option value="pt-br">Português (Brasil)</option>
+            </select>
+            <h2 id="captions-title">Captions</h2>
+            <p>(Enable subtitles by default)</p>
+            <input type="checkbox" name="show-captions" id="show-captions" />
+            <h2 id="age-restriction-title">Age Restriction</h2>
+            <select name="age-restriction" id="age-restriction">
+              <option value="0">AL</option>
+              <option value="1">A10</option>
+              <option value="2">A12</option>
+              <option value="3">A14</option>
+              <option value="4">A16</option>
+              <option value="5" selected>A18</option>
+            </select>
+            <button type="submit">Save</button>
+          </form>
+        </div>
+        <% } %>
+        <% if (section === 'change-email') { %>
+        <div class="container">
+          <form action="" method="post">
+            <h2 id="current-email-title">Current Email</h2>
+            <p>myemail@email.com</p>
+            <h2 id="new-email-title">New Email</h2>
+            <input type="email" name="new-email" id="new-email" />
+            <h2 id="confirm-new-email-title">Confirm New Email</h2>
+            <input
+              type="email"
+              name="confirm-new-email"
+              id="confirm-new-email"
+            />
+            <h2 id="password-title">Password</h2>
+            <input type="password" name="password" id="password" />
+            <button type="submit">Change Email</button>
+          </form>
+        </div>
+        <% } %>
+        <% if (section === 'change-password') { %>
+        <div class="container">
+          <form action="" method="post">
+            <h2 id="curent-password-title">Current Password</h2>
+            <input
+              type="password"
+              name="current-password"
+              id="current-password"
+            />
+            <h2 id="new-password-title">New Password</h2>
+            <input type="password" name="new-password" id="new-password" />
+            <h2 id="confirm-new-password-title">Confirm New Password</h2>
+            <input
+              type="password"
+              name="confirm-new-password"
+              id="confirm-new-password"
+            /><button type="submit">Change Password</button>
+          </form>
+        </div>
+        <% } %>
+        <% if (section === 'order-history') { %>
+        <div class="container">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Payment Info</th>
+                <th>Amount</th>
+                <th>Subscription</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-01-21</td>
+                <td>Visa ending in 0000</td>
+                <td>14.99</td>
+                <td>Basic</td>
+                <td>successful</td>
+              </tr>
+              <tr>
+                <td>2023-01-19</td>
+                <td>Visa ending in 0000</td>
+                <td>14.99</td>
+                <td>Basic</td>
+                <td>failed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <% } %>
+        <% if (section === 'payment-methods') { %>
+        <div class="container">
+          <h2 id="credit-cards-title">Credit Cards</h2>
+          <ul class="credit-cards-list">
+            <li id="credit-card-1">
+              <h3>Visa ending in 0000</h3>
+              <a href="/secure/credit-card/remove/1">Remove</a>
+            </li>
+            <li id="credit-card-2">
+              <h3>Visa ending in 1111</h3>
+              <a href="/secure/credit-card/remove/2">Remove</a>
+            </li>
+          </ul>
+          <a href="/secure/credit-card">New Credit Card</a>
         </div>
         <% } %>
       </div>
     </div>
   </div>
 </main>
-<script src="/js/home.js"></script>
+<script src="/js/account.js"></script>
+<script>
+  setMobileTable("table");
+</script>
 <%- include('partials/footer') %>
