@@ -7,11 +7,11 @@
     "node": "20.x"
   },
   "scripts": {
-    "start": "node app.js",
-    "start:dev": "nodemon app.js",
+    "start": "node --env-file=.env app.js",
+    "start:dev": "nodemon --env-file=.env app.js",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --plugin=prettier-plugin-ejs --write .",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watchAll"
   },
   "author": "",
   "license": "MIT",
