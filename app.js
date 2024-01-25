@@ -14,6 +14,10 @@ app.use("/svg", express.static(__dirname + "public/svg"));
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
+app.get("/api/v1/status", (req, res) => {
+  res.status(200).json({ chave: "valor" });
+});
+
 app.get("", (req, res) => {
   res.render("home");
 });
