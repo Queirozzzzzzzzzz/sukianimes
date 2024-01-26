@@ -1,9 +1,28 @@
 const database = require("../infra/database.js");
 
 async function status(req, res) {
-  const result = await database.query("SELECT 1 + 1 as sum;");
+  const updatedAt = new Date().toISOString();
+  const postgresVersionResult = await database.query("SHOW server_version;");
+  const postgresVersionValue = postgresVersionResult.rows[0].server_version;
+  const maxConnectionsResult = await database.query("SHOW max_connections;");
+  const maxConnectionsValue = maxConnectionsResult.rows[0].max_connections;
+  const databaseName = process.env.POSTGRES_DB;
+  const openedConnectionsResult = await database.query({
+    text: "SELECT count(*)::int FROM pg_stat_activity WHERE datname = $1;",
+    values: [databaseName],
+  });
+  const openedConnectionsValue = openedConnectionsResult.rows[0].count;
 
-  return result;
+  res.json({
+    updated_at: updatedAt,
+    dependencies: {
+      database: {
+        postgres_version: postgresVersionValue,
+        max_connections: parseInt(maxConnectionsValue),
+        opened_connections: openedConnectionsValue,
+      },
+    },
+  });
 }
 
 module.exports = {

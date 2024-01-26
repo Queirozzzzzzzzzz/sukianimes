@@ -18,8 +18,7 @@ app.set("view engine", "ejs");
 
 app.get("/api/v1/status", async (req, res) => {
   const result = await status(req, res);
-  console.log(result.rows);
-  res.status(200).json({ chave: "valor", result });
+  res.status(200).json(result);
 });
 
 app.get("", (req, res) => {

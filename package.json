@@ -7,8 +7,11 @@
     "node": "20.x"
   },
   "scripts": {
-    "start": "node --env-file=.env.development app.js",
-    "start:dev": "nodemon --env-file=.env.development app.js",
+    "start": "npm run services:up && node app.js",
+    "start:dev": "npm run services:up && nodemon --env-file=.env.development app.js",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "services:down": "docker compose -f infra/compose.yaml down",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --plugin=prettier-plugin-ejs --write .",
     "test:watch": "jest --watchAll"
