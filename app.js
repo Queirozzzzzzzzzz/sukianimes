@@ -1,9 +1,15 @@
 // imports
 const express = require("express");
-const { status } = require("./models/status.js");
+const { Status } = require("./controllers/status.js");
+const cookieParser = require("cookie-parser");
+const accountRoutes = require("./routes/account.js");
+const { Accounts } = require("./models/account.js");
 
+// Models
+Accounts();
+
+const port = process.env.PORT;
 const app = express();
-const port = 3592;
 
 // Static Files
 app.use(express.static("public"));
@@ -12,12 +18,21 @@ app.use("/js", express.static(__dirname + "public/js"));
 app.use("/img", express.static(__dirname + "public/img"));
 app.use("/svg", express.static(__dirname + "public/svg"));
 
-// Set Views
+// Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+
+// Routes
+
+app.use("/auth/accounts", accountRoutes);
+
+// Views
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
 app.get("/api/v1/status", async (req, res) => {
-  const result = await status(req, res);
+  const result = await Status(req, res);
   res.status(200).json(result);
 });
 
@@ -29,11 +44,11 @@ app.get("/offer-upgrade", (req, res) => {
   res.render("offer-upgrade");
 });
 
-app.get("/login", (req, res) => {
+app.get("/auth/login", (req, res) => {
   res.render("login");
 });
 
-app.get("/register", (req, res) => {
+app.get("/auth/register", (req, res) => {
   res.render("register");
 });
 
