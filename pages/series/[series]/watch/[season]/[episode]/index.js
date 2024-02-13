@@ -15,9 +15,9 @@ export default function Watch() {
     function adjustInfoTitle() {
       const h1 = document.querySelector(".series .info h1");
       const charCount = h1.innerText.length;
-      const maxCharValue = window.innerWidth <= 600 ? 9 : 36;
+      const maxCharValue = isMobile ? 9 : 36;
       const bigFontSize = "3em";
-      const smallFontSize = window.innerWidth <= 600 ? "1.5em" : "2em";
+      const smallFontSize = isMobile ? "1.5em" : "2em";
 
       if (charCount <= maxCharValue) {
         setTitleFontSize(bigFontSize);
@@ -73,6 +73,16 @@ export default function Watch() {
   const [volume, setVolume] = useState(0.7);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
+
+  function isMobileView() {
+    if (typeof window !== "undefined") {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        window.navigator.userAgent,
+      );
+    }
+  }
+
+  const isMobile = isMobileView();
 
   // Event handler for keydown events
   useEffect(() => {
@@ -132,6 +142,7 @@ export default function Watch() {
 
     window.addEventListener("mousemove", showControls);
     window.addEventListener("click", showControls);
+    window.addEventListener("touchstart", showControls);
 
     timeoutId = setTimeout(hideControls, 2000);
 
@@ -140,6 +151,7 @@ export default function Watch() {
 
       window.removeEventListener("mousemove", showControls);
       window.removeEventListener("click", showControls);
+      window.removeEventListener("touchstart", showControls);
     };
   }, []);
 
@@ -404,6 +416,20 @@ export default function Watch() {
   const [wasPaused, setWasPaused] = useState(null);
 
   useEffect(() => {
+    const handleTouchMove = (e) => {
+      handleTimelineUpdate(e);
+    };
+
+    const handleTouchStart = (e) => {
+      toggleScrubbing(e);
+    };
+
+    const handleTouchEnd = (e) => {
+      if (isScrubbing) {
+        toggleScrubbing(e);
+      }
+    };
+
     const handleMouseMove = (e) => {
       handleTimelineUpdate(e);
     };
@@ -427,6 +453,14 @@ export default function Watch() {
         "mousedown",
         handleMouseDown,
       );
+      timelineContainerRef.current.addEventListener(
+        "touchstart",
+        handleTouchStart,
+      );
+      timelineContainerRef.current.addEventListener(
+        "touchmove",
+        handleTouchMove,
+      );
     }
 
     document.addEventListener("mouseup", handleMouseUp);
@@ -443,6 +477,17 @@ export default function Watch() {
         );
       }
       document.removeEventListener("mouseup", handleMouseUp);
+      if (timelineContainerRef.current) {
+        timelineContainerRef.current.removeEventListener(
+          "touchstart",
+          handleTouchStart,
+        );
+        timelineContainerRef.current.removeEventListener(
+          "touchmove",
+          handleTouchMove,
+        );
+      }
+      document.removeEventListener("touchend", handleTouchEnd);
     };
   }, [isScrubbing]);
 
@@ -458,7 +503,12 @@ export default function Watch() {
       setWasPaused(videoRef.current.paused);
       videoRef.current.pause();
     } else {
-      videoRef.current.currentTime = percent * videoRef.current.duration;
+      if (
+        isFinite(percent * videoRef.current.duration) &&
+        isFinite(videoRef.current.currentTime)
+      ) {
+        videoRef.current.currentTime = percent * videoRef.current.duration;
+      }
       if (!wasPaused) {
         videoRef.current.play();
       }
@@ -525,9 +575,23 @@ export default function Watch() {
           </div>
           <div
             className={`play-pause-area ${isFullScreen ? "full-screen" : ""}`}
-            onClick={togglePlay}
+            onClick={isMobile ? undefined : togglePlay}
             onDoubleClick={toggleFullScreenMode}
-          ></div>
+          >
+            {isPlaying ? (
+              <img
+                className="mobileBtn"
+                src="/svg/pause.svg"
+                onClick={togglePlay}
+              />
+            ) : (
+              <img
+                className="mobileBtn"
+                src="/svg/play.svg"
+                onClick={togglePlay}
+              />
+            )}
+          </div>
           <div className="controls">
             <div className="left">
               <button className="play-pause-btn" onClick={togglePlay}>
@@ -602,16 +666,17 @@ export default function Watch() {
                 />
               </button>
               <button
-                class="full-screen-btn"
-                className={`${isFullScreen ? "full-screen" : ""}`}
+                className={`full-screen-btn ${
+                  isFullScreen ? "full-screen" : ""
+                }`}
                 onClick={toggleFullScreenMode}
               >
                 <img
-                  class="full-screen-in-icon"
+                  className="full-screen-in-icon"
                   src="/svg/full-screen-in.svg"
                 />
                 <img
-                  class="full-screen-out-icon"
+                  className="full-screen-out-icon"
                   src="/svg/full-screen-out.svg"
                 />
               </button>

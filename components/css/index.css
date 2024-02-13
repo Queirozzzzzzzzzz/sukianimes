@@ -1363,6 +1363,10 @@ input[type="range"] {
   left: 0;
 }
 
+.series.episode .video-controls .play-pause-area .mobileBtn {
+  display: none;
+}
+
 .series.episode .video-controls .play-pause-area.full-screen {
   height: calc(100vh - 60px);
 }
@@ -2325,6 +2329,21 @@ a#watchlater:hover {
     width: 45px !important;
   }
 
+  .series.episode .video-controls .play-pause-area {
+    height: 15vh;
+    margin-top: 17.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .series.episode .video-controls .play-pause-area .mobileBtn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
   /* LISTS */
 
   .list {
@@ -2785,6 +2804,22 @@ a#watchlater:hover {
 
   .series.episode .video-controls .play-pause-area {
     height: calc(75vh - 60px);
+  }
+
+  .series.episode .video-controls .play-pause-area {
+    max-height: 25vh;
+    margin-top: 35vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .series.episode .video-controls .play-pause-area .mobileBtn {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
   }
 
   /* episode */
