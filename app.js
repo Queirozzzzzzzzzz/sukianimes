@@ -1,15 +1,15 @@
 // imports
 const express = require("express");
-const { Status } = require("./controllers/status.js");
+const { Status } = require("./pages/api/v1/status/status.js");
 const cookieParser = require("cookie-parser");
 const accountRoutes = require("./routes/account.js");
 const { Accounts } = require("./models/account.js");
 
-// Models
-Accounts();
-
 const port = process.env.PORT;
 const app = express();
+
+// Models
+Accounts();
 
 // Static Files
 app.use(express.static("public"));
