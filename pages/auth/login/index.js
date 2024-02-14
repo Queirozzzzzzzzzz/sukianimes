@@ -7,7 +7,9 @@ export default function Login() {
     const handleInputChange = (e) => {
       const inputId = e.target.id;
       const inputElement = document.getElementById(inputId);
-      const labelElement = document.querySelector(`label[for='${inputId}']`);
+      const labelElement = document.querySelector(
+        `label[htmlFor='${inputId}']`,
+      );
 
       if (e.target.value !== "") {
         labelElement.style.fontSize = "1.5em";
@@ -48,16 +50,16 @@ export default function Login() {
   }, []);
 
   return (
-    <div class="tecnical-form container login-form">
+    <div className="tecnical-form container login-form">
       <form action="/auth/accounts/login" method="POST">
         <h1>Login</h1>
-        <div class="form-group">
+        <div className="form-group">
           <input type="email" name="email" id="email" />
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="password" name="password" id="password" />
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
         </div>
         <button type="submit">Enter</button>
       </form>

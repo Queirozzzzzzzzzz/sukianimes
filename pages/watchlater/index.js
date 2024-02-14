@@ -1,8 +1,8 @@
 export default function Watchlater() {
   return (
-    <div class="list watchlater">
+    <div className="list watchlater">
       <h1 id="title">WATCHLATER</h1>
-      <div class="lists">
+      <div className="lists">
         <a href="/watchlater" id="watchlater">
           WATCHLATER
         </a>
@@ -13,10 +13,10 @@ export default function Watchlater() {
           HISTORY
         </a>
       </div>
-      <div class="series-container">
-        <div class="content-item">
+      <div className="series-container">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -35,19 +35,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>Sound Euphonium!</h4>
               </a>
               <h5>Up Next: S2 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -55,9 +55,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -76,19 +76,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>KAGUYA-SAMA: LOVE IS WAR</h4>
               </a>
               <h5>Continue: S3 E10</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -96,9 +96,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -117,19 +117,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>Your lie in April</h4>
               </a>
               <h5>Start Watching: S1 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -137,9 +137,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -158,19 +158,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>Golden Time</h4>
               </a>
               <h5>Watch Again: S1 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -178,9 +178,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -199,19 +199,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>Attack on Titan</h4>
               </a>
               <h5>Continue: S4 E66</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -219,9 +219,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -240,19 +240,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>Black Clover</h4>
               </a>
               <h5>Watch Again: S1 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -260,9 +260,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="/series/sousou-no-frieren/watch/1/6">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -281,19 +281,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="/series/sousou-no-frieren/1">
                 <h4>Frieren: Beyond Journey's End</h4>
               </a>
               <h5>Continue: S1 E6</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -301,9 +301,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -322,19 +322,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>My Teen Romantic Comedy SNAFU</h4>
               </a>
               <h5>Watch Again: S1 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -342,9 +342,9 @@ export default function Watchlater() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -363,19 +363,19 @@ export default function Watchlater() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>KARAKAI JOZU NO TAKAGI-SAN</h4>
               </a>
               <h5>Start Watching: S2 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>

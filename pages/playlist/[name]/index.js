@@ -1,8 +1,8 @@
 export default function Playlist() {
   return (
-    <div class="list playlist">
+    <div className="list playlist">
       <h1 id="title">Cool playlist</h1>
-      <div class="lists">
+      <div className="lists">
         <a href="/watchlater" id="watchlater">
           WATCHLATER
         </a>
@@ -13,10 +13,10 @@ export default function Playlist() {
           HISTORY
         </a>
       </div>
-      <div class="series-container">
-        <div class="content-item">
+      <div className="series-container">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -35,19 +35,19 @@ export default function Playlist() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>Sound Euphonium!</h4>
               </a>
               <h5>Up Next: S2 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -55,9 +55,9 @@ export default function Playlist() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -76,19 +76,19 @@ export default function Playlist() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="">
                 <h4>Your lie in April</h4>
               </a>
               <h5>Start Watching: S1 E1</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>
@@ -96,9 +96,9 @@ export default function Playlist() {
             </div>
           </div>
         </div>
-        <div class="content-item">
+        <div className="content-item">
           <a href="/series/sousou-no-frieren/watch/1/6">
-            <div class="banner">
+            <div className="banner">
               <picture>
                 <source
                   media="(max-width: 600px)"
@@ -117,19 +117,19 @@ export default function Playlist() {
               <img src="/svg/play.svg" id="play-img" />
             </div>
           </a>
-          <div class="info">
-            <div class="top">
+          <div className="info">
+            <div className="top">
               <a href="/series/sousou-no-frieren/1">
                 <h4>Frieren: Beyond Journey's End</h4>
               </a>
               <h5>Continue: S1 E6</h5>
             </div>
-            <div class="bottom">
-              <div class="left">
+            <div className="bottom">
+              <div className="left">
                 <h5>Series</h5>
                 <p>Sub | Dub</p>
               </div>
-              <div class="right">
+              <div className="right">
                 <button>
                   <img id="trash" src="/svg/trash.svg" />
                 </button>

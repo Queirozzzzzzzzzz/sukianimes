@@ -7,7 +7,9 @@ export default function Register() {
     const handleInputChange = (e) => {
       const inputId = e.target.id;
       const inputElement = document.getElementById(inputId);
-      const labelElement = document.querySelector(`label[for='${inputId}']`);
+      const labelElement = document.querySelector(
+        `label[htmlFor='${inputId}']`,
+      );
 
       if (e.target.value !== "") {
         labelElement.style.fontSize = "1.5em";
@@ -48,24 +50,24 @@ export default function Register() {
   }, []);
 
   return (
-    <div class="tecnical-form container register-form">
+    <div className="tecnical-form container register-form">
       <form action="/auth/accounts/signup" method="POST">
         <h1>Sign Up</h1>
-        <div class="form-group">
+        <div className="form-group">
           <input type="text" name="accountname" id="accountname" />
-          <label for="accountname">Username</label>
+          <label htmlFor="accountname">Username</label>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="email" name="email" id="email" />
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="password" name="password1" id="password1" />
-          <label for="password1">Password</label>
+          <label htmlFor="password1">Password</label>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="password" name="password2" id="password2" />
-          <label for="password2">Confirm Password</label>
+          <label htmlFor="password2">Confirm Password</label>
         </div>
         <button>Enter</button>
       </form>
