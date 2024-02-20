@@ -20,19 +20,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-1.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-1.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-1.webp"
+                  srcset="/static/img/previews/watchlater-preview-1.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-1.webp"
+                  src="/static/img/previews/watchlater-preview-1.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -49,7 +49,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -61,19 +61,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-2.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-2.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-2.webp"
+                  srcset="/static/img/previews/watchlater-preview-2.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-2.webp"
+                  src="/static/img/previews/watchlater-preview-2.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A14.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A14.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -90,7 +90,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -102,19 +102,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-3.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-3.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-3.webp"
+                  srcset="/static/img/previews/watchlater-preview-3.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-3.webp"
+                  src="/static/img/previews/watchlater-preview-3.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A10.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A10.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -131,7 +131,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -143,19 +143,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-4.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-4.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-4.webp"
+                  srcset="/static/img/previews/watchlater-preview-4.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-4.webp"
+                  src="/static/img/previews/watchlater-preview-4.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A14.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A14.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -172,7 +172,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -184,19 +184,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-5.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-5.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-5.webp"
+                  srcset="/static/img/previews/watchlater-preview-5.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-5.webp"
+                  src="/static/img/previews/watchlater-preview-5.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A16.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A16.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -213,7 +213,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -225,19 +225,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-6.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-6.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-6.webp"
+                  srcset="/static/img/previews/watchlater-preview-6.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-6.webp"
+                  src="/static/img/previews/watchlater-preview-6.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A14.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A14.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -254,7 +254,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -266,19 +266,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-7.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-7.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-7.webp"
+                  srcset="/static/img/previews/watchlater-preview-7.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-7.webp"
+                  src="/static/img/previews/watchlater-preview-7.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -295,7 +295,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -307,19 +307,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-8.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-8.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-8.webp"
+                  srcset="/static/img/previews/watchlater-preview-8.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-8.webp"
+                  src="/static/img/previews/watchlater-preview-8.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A14.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A14.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -336,7 +336,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -348,19 +348,19 @@ export default function Watchlater() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-9.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-9.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-9.webp"
+                  srcset="/static/img/previews/watchlater-preview-9.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-9.webp"
+                  src="/static/img/previews/watchlater-preview-9.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -377,7 +377,7 @@ export default function Watchlater() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>

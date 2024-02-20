@@ -53,7 +53,7 @@ export default function Profile() {
         <div className="top">
           <div className="left">
             <div className="icon">
-              <img src="/svg/configuration.svg" />
+              <img src="/static/svg/configuration.svg" />
             </div>
           </div>
           <div className="right">
@@ -87,7 +87,7 @@ export default function Profile() {
               <div className="container">
                 <div className="image-upload">
                   <label htmlFor="file-input">
-                    <img src="/img/previews/series-reviews-logo-1.webp" />
+                    <img src="/static/img/previews/series-reviews-logo-1.webp" />
                   </label>
                   <input
                     id="file-input"
@@ -107,7 +107,10 @@ export default function Profile() {
             )}
             {section === "subscription" && (
               <div className="container">
-                <img src="/svg/level-0-member.svg" alt="Subscription Icon" />
+                <img
+                  src="/static/svg/level-0-member.svg"
+                  alt="Subscription Icon"
+                />
                 <h2 id="subscription">Free</h2>
                 <p id="remaining-time">
                   You currently don't have a subscription

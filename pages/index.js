@@ -17,37 +17,47 @@ function Home() {
     {
       title: "WATCH S1 E1",
       mobileImageUrl:
-        "/img/previews/home-preview-banner-carousel-mobile-1.webp",
-      desktopImageUrl: "/img/previews/home-preview-banner-carousel-1.webp",
-      titleImageUrl: "/img/previews/home-preview-banner-carousel-title-1.webp",
+        "/static/img/previews/home-preview-banner-carousel-mobile-1.webp",
+      desktopImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-1.webp",
+      titleImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-title-1.webp",
     },
     {
       title: "CONTINUE WATCHING S1 E10",
       mobileImageUrl:
-        "/img/previews/home-preview-banner-carousel-mobile-2.webp",
-      desktopImageUrl: "/img/previews/home-preview-banner-carousel-2.webp",
-      titleImageUrl: "/img/previews/home-preview-banner-carousel-title-2.webp",
+        "/static/img/previews/home-preview-banner-carousel-mobile-2.webp",
+      desktopImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-2.webp",
+      titleImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-title-2.webp",
     },
     {
       title: "WATCH S1 E1",
       mobileImageUrl:
-        "/img/previews/home-preview-banner-carousel-mobile-3.webp",
-      desktopImageUrl: "/img/previews/home-preview-banner-carousel-3.webp",
-      titleImageUrl: "/img/previews/home-preview-banner-carousel-title-3.webp",
+        "/static/img/previews/home-preview-banner-carousel-mobile-3.webp",
+      desktopImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-3.webp",
+      titleImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-title-3.webp",
     },
     {
       title: "WATCH S1 E1",
       mobileImageUrl:
-        "/img/previews/home-preview-banner-carousel-mobile-4.webp",
-      desktopImageUrl: "/img/previews/home-preview-banner-carousel-4.webp",
-      titleImageUrl: "/img/previews/home-preview-banner-carousel-title-4.webp",
+        "/static/img/previews/home-preview-banner-carousel-mobile-4.webp",
+      desktopImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-4.webp",
+      titleImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-title-4.webp",
     },
     {
       title: "CONTINUE WATCHING S1 E10",
       mobileImageUrl:
-        "/img/previews/home-preview-banner-carousel-mobile-5.webp",
-      desktopImageUrl: "/img/previews/home-preview-banner-carousel-5.webp",
-      titleImageUrl: "/img/previews/home-preview-banner-carousel-title-5.webp",
+        "/static/img/previews/home-preview-banner-carousel-mobile-5.webp",
+      desktopImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-5.webp",
+      titleImageUrl:
+        "/static/img/previews/home-preview-banner-carousel-title-5.webp",
     },
   ];
 
@@ -109,16 +119,16 @@ function Home() {
   const airedTodayItems = [
     {
       id: 1,
-      coverImage: "/img/previews/home-preview-aired-today-1.webp",
-      ageRating: "/svg/A12.svg",
+      coverImage: "/static/img/previews/home-preview-aired-today-1.webp",
+      ageRating: "/static/svg/A12.svg",
       title: "Frieren: Beyound Journey's End",
       subDub: "Sub | Dub",
       url: "/series/sousou-no-frieren/1",
     },
     {
       id: 2,
-      coverImage: "/img/previews/home-preview-aired-today-2.webp",
-      ageRating: "/svg/A16.svg",
+      coverImage: "/static/img/previews/home-preview-aired-today-2.webp",
+      ageRating: "/static/svg/A16.svg",
       title: "Delicious in Dungeon",
       subDub: "Sub | Dub",
       url: "",
@@ -126,16 +136,16 @@ function Home() {
     {
       id: 3,
       title: "Clannad",
-      coverImage: "/img/previews/home-preview-aired-today-3.webp",
-      ageRating: "/svg/A12.svg",
+      coverImage: "/static/img/previews/home-preview-aired-today-3.webp",
+      ageRating: "/static/svg/A12.svg",
       subDub: "Sub | Dub",
       url: "",
     },
     {
       id: 4,
       title: "Dr. Stone",
-      coverImage: "/img/previews/home-preview-aired-today-4.webp",
-      ageRating: "/svg/A14.svg",
+      coverImage: "/static/img/previews/home-preview-aired-today-4.webp",
+      ageRating: "/static/svg/A14.svg",
       subDub: "Sub | Dub",
       url: "",
     },
@@ -145,42 +155,42 @@ function Home() {
     {
       id: 1,
       title: "Code Geass",
-      coverImage: "/img/previews/home-preview-suggestions-1.webp",
+      coverImage: "/static/img/previews/home-preview-suggestions-1.webp",
       subDub: "Sub | Dub",
       url: "",
     },
     {
       id: 2,
       title: "Spy x Family 2",
-      coverImage: "/img/previews/home-preview-suggestions-2.webp",
+      coverImage: "/static/img/previews/home-preview-suggestions-2.webp",
       subDub: "Sub | Dub",
       url: "",
     },
     {
       id: 3,
       title: "Jujutsu Kaisen 2",
-      coverImage: "/img/previews/home-preview-suggestions-3.webp",
+      coverImage: "/static/img/previews/home-preview-suggestions-3.webp",
       subDub: "Sub | Dub",
       url: "",
     },
     {
       id: 4,
       title: "Bocchi The Rock!",
-      coverImage: "/img/previews/home-preview-suggestions-4.webp",
+      coverImage: "/static/img/previews/home-preview-suggestions-4.webp",
       subDub: "Sub | Dub",
       url: "",
     },
     {
       id: 5,
       title: "Attack on Titan: Final Season - The Final Chapters",
-      coverImage: "/img/previews/home-preview-suggestions-5.webp",
+      coverImage: "/static/img/previews/home-preview-suggestions-5.webp",
       subDub: "Sub | Dub",
       url: "",
     },
     {
       id: 6,
       title: "Vinland Saga Season 2",
-      coverImage: "/img/previews/home-preview-suggestions-6.webp",
+      coverImage: "/static/img/previews/home-preview-suggestions-6.webp",
       subDub: "Sub | Dub",
       url: "",
     },
@@ -190,8 +200,8 @@ function Home() {
     {
       id: 1,
       title: "Suzume",
-      coverImage: "/img/previews/home-preview-recently-added-1.webp",
-      ageRating: "/svg/A12.svg",
+      coverImage: "/static/img/previews/home-preview-recently-added-1.webp",
+      ageRating: "/static/svg/A12.svg",
       subDub: "Sub | Dub",
       url: "",
     },
@@ -241,11 +251,11 @@ function Home() {
               />
               <div className="interact">
                 <button>
-                  <img src="/svg/play.svg" alt="Play" />
+                  <img src="/static/svg/play.svg" alt="Play" />
                   <p>{item.title}</p>
                 </button>
                 <button id="big-icon">
-                  <img src="/svg/bookmark.svg" alt="Bookmark" />
+                  <img src="/static/svg/bookmark.svg" alt="Bookmark" />
                 </button>
               </div>
             </div>
@@ -275,7 +285,7 @@ function Home() {
                   <img src={item.ageRating} alt="Age Rating" />
                 </div>
                 <div className="add-to-watch-list">
-                  <img src="/svg/bookmark.svg" alt="Add to Watchlist" />
+                  <img src="/static/svg/bookmark.svg" alt="Add to Watchlist" />
                 </div>
                 <p id="title">{item.title}</p>
                 <h5>{item.subDub}</h5>
@@ -285,12 +295,12 @@ function Home() {
         </div>
         <img
           id="previous"
-          src="/svg/previous.svg"
+          src="/static/svg/previous.svg"
           onClick={() => handleNavigation(0, "previous")}
         />
         <img
           id="next"
-          src="/svg/next.svg"
+          src="/static/svg/next.svg"
           onClick={() => handleNavigation(0, "next")}
         />
       </div>
@@ -332,15 +342,15 @@ function Home() {
             <div className="video-preview">
               <img
                 id="thumbnail"
-                src="/img/previews/home-preview-keep-watching-1.webp"
+                src="/static/img/previews/home-preview-keep-watching-1.webp"
               />
               <div className="hidden-preview">
                 <div className="play-img">
-                  <img src="/svg/play.svg" />
+                  <img src="/static/svg/play.svg" />
                 </div>
               </div>
               <div className="age-rating">
-                <img src="/svg/A12.svg" />
+                <img src="/static/svg/A12.svg" />
               </div>
               <div className="video-length">8m left</div>
               <div className="progress-bar-base"></div>
@@ -357,15 +367,15 @@ function Home() {
             <div className="video-preview">
               <img
                 id="thumbnail"
-                src="/img/previews/home-preview-keep-watching-2.webp"
+                src="/static/img/previews/home-preview-keep-watching-2.webp"
               />
               <div className="hidden-preview">
                 <div className="play-img">
-                  <img src="/svg/play.svg" />
+                  <img src="/static/svg/play.svg" />
                 </div>
               </div>
               <div className="age-rating">
-                <img src="/svg/A16.svg" />
+                <img src="/static/svg/A16.svg" />
               </div>
               <div className="video-length">14m left</div>
               <div className="progress-bar-base"></div>
@@ -382,15 +392,15 @@ function Home() {
             <div className="video-preview">
               <img
                 id="thumbnail"
-                src="/img/previews/home-preview-keep-watching-3.webp"
+                src="/static/img/previews/home-preview-keep-watching-3.webp"
               />
               <div className="hidden-preview">
                 <div className="play-img">
-                  <img src="/svg/play.svg" />
+                  <img src="/static/svg/play.svg" />
                 </div>
               </div>
               <div className="age-rating">
-                <img src="/svg/A12.svg" />
+                <img src="/static/svg/A12.svg" />
               </div>
               <div className="video-length">21m left</div>
               <div className="progress-bar-base"></div>
@@ -407,15 +417,15 @@ function Home() {
             <div className="video-preview">
               <img
                 id="thumbnail"
-                src="/img/previews/home-preview-keep-watching-4.webp"
+                src="/static/img/previews/home-preview-keep-watching-4.webp"
               />
               <div className="hidden-preview">
                 <div className="play-img">
-                  <img src="/svg/play.svg" />
+                  <img src="/static/svg/play.svg" />
                 </div>
               </div>
               <div className="age-rating">
-                <img src="/svg/A12.svg" />
+                <img src="/static/svg/A12.svg" />
               </div>
               <div className="video-length">10m left</div>
               <div className="progress-bar-base"></div>
@@ -432,15 +442,15 @@ function Home() {
             <div className="video-preview">
               <img
                 id="thumbnail"
-                src="/img/previews/home-preview-keep-watching-5.webp"
+                src="/static/img/previews/home-preview-keep-watching-5.webp"
               />
               <div className="hidden-preview">
                 <div className="play-img">
-                  <img src="/svg/play.svg" />
+                  <img src="/static/svg/play.svg" />
                 </div>
               </div>
               <div className="age-rating">
-                <img src="/svg/A12.svg" />
+                <img src="/static/svg/A12.svg" />
               </div>
               <div className="video-length">8m left</div>
               <div className="progress-bar-base"></div>
@@ -457,15 +467,15 @@ function Home() {
             <div className="video-preview">
               <img
                 id="thumbnail"
-                src="/img/previews/home-preview-keep-watching-6.webp"
+                src="/static/img/previews/home-preview-keep-watching-6.webp"
               />
               <div className="hidden-preview">
                 <div className="play-img">
-                  <img src="/svg/play.svg" />
+                  <img src="/static/svg/play.svg" />
                 </div>
               </div>
               <div className="age-rating">
-                <img src="/svg/A16.svg" />
+                <img src="/static/svg/A16.svg" />
               </div>
               <div className="video-length">17m left</div>
               <div className="progress-bar-base"></div>
@@ -504,12 +514,12 @@ function Home() {
         </div>
         <img
           id="previous"
-          src="/svg/previous.svg"
+          src="/static/svg/previous.svg"
           onClick={() => handleNavigation(1, "previous")}
         />
         <img
           id="next"
-          src="/svg/next.svg"
+          src="/static/svg/next.svg"
           onClick={() => handleNavigation(1, "next")}
         />
       </div>
@@ -524,21 +534,21 @@ function Home() {
               <a href="">
                 <img
                   id="thumbnail"
-                  src="/img/previews/home-preview-watch-list-1.webp"
+                  src="/static/img/previews/home-preview-watch-list-1.webp"
                 />
               </a>
               <div className="hidden-preview">
                 <a href="" className="add-to-watch-list">
-                  <img src="/svg/bookmark-filled.svg" />
+                  <img src="/static/svg/bookmark-filled.svg" />
                 </a>
                 <a href="">
                   <div className="play-img">
-                    <img src="/svg/play.svg" />
+                    <img src="/static/svg/play.svg" />
                   </div>
                 </a>
               </div>
               <div className="age-rating">
-                <img src="/svg/A12.svg" />
+                <img src="/static/svg/A12.svg" />
               </div>
             </div>
             <p>Sound! Euphonium</p>
@@ -549,21 +559,21 @@ function Home() {
               <a href="">
                 <img
                   id="thumbnail"
-                  src="/img/previews/home-preview-watch-list-2.webp"
+                  src="/static/img/previews/home-preview-watch-list-2.webp"
                 />
               </a>
               <div className="hidden-preview">
                 <a href="" className="add-to-watch-list">
-                  <img src="/svg/bookmark-filled.svg" />
+                  <img src="/static/svg/bookmark-filled.svg" />
                 </a>
                 <a href="">
                   <div className="play-img">
-                    <img src="/svg/play.svg" />
+                    <img src="/static/svg/play.svg" />
                   </div>
                 </a>
               </div>
               <div className="age-rating">
-                <img src="/svg/A14.svg" />
+                <img src="/static/svg/A14.svg" />
               </div>
             </div>
             <p>KAGUYA-SAMA: LOVE IS WAR</p>
@@ -574,21 +584,21 @@ function Home() {
               <a href="">
                 <img
                   id="thumbnail"
-                  src="/img/previews/home-preview-watch-list-3.webp"
+                  src="/static/img/previews/home-preview-watch-list-3.webp"
                 />
               </a>
               <div className="hidden-preview">
                 <a href="" className="add-to-watch-list">
-                  <img src="/svg/bookmark-filled.svg" />
+                  <img src="/static/svg/bookmark-filled.svg" />
                 </a>
                 <a href="">
                   <div className="play-img">
-                    <img src="/svg/play.svg" />
+                    <img src="/static/svg/play.svg" />
                   </div>
                 </a>
               </div>
               <div className="age-rating">
-                <img src="/svg/A10.svg" />
+                <img src="/static/svg/A10.svg" />
               </div>
             </div>
             <p>Your lie in April</p>
@@ -599,21 +609,21 @@ function Home() {
               <a href="">
                 <img
                   id="thumbnail"
-                  src="/img/previews/home-preview-watch-list-4.webp"
+                  src="/static/img/previews/home-preview-watch-list-4.webp"
                 />
               </a>
               <div className="hidden-preview">
                 <a href="" className="add-to-watch-list">
-                  <img src="/svg/bookmark-filled.svg" />
+                  <img src="/static/svg/bookmark-filled.svg" />
                 </a>
                 <a href="">
                   <div className="play-img">
-                    <img src="/svg/play.svg" />
+                    <img src="/static/svg/play.svg" />
                   </div>
                 </a>
               </div>
               <div className="age-rating">
-                <img src="/svg/A12.svg" />
+                <img src="/static/svg/A12.svg" />
               </div>
             </div>
             <p>Golden Time</p>
@@ -624,21 +634,21 @@ function Home() {
               <a href="">
                 <img
                   id="thumbnail"
-                  src="/img/previews/home-preview-watch-list-5.webp"
+                  src="/static/img/previews/home-preview-watch-list-5.webp"
                 />
               </a>
               <div className="hidden-preview">
                 <a href="" className="add-to-watch-list">
-                  <img src="/svg/bookmark-filled.svg" />
+                  <img src="/static/svg/bookmark-filled.svg" />
                 </a>
                 <a href="">
                   <div className="play-img">
-                    <img src="/svg/play.svg" />
+                    <img src="/static/svg/play.svg" />
                   </div>
                 </a>
               </div>
               <div className="age-rating">
-                <img src="/svg/A16.svg" />
+                <img src="/static/svg/A16.svg" />
               </div>
             </div>
             <p>Attack on Titan</p>
@@ -649,21 +659,21 @@ function Home() {
               <a href="">
                 <img
                   id="thumbnail"
-                  src="/img/previews/home-preview-watch-list-6.webp"
+                  src="/static/img/previews/home-preview-watch-list-6.webp"
                 />
               </a>
               <div className="hidden-preview">
                 <a href="" className="add-to-watch-list">
-                  <img src="/svg/bookmark-filled.svg" />
+                  <img src="/static/svg/bookmark-filled.svg" />
                 </a>
                 <a href="">
                   <div className="play-img">
-                    <img src="/svg/play.svg" />
+                    <img src="/static/svg/play.svg" />
                   </div>
                 </a>
               </div>
               <div className="age-rating">
-                <img src="/svg/A12.svg" />
+                <img src="/static/svg/A12.svg" />
               </div>
             </div>
             <p>Black Clover</p>
@@ -691,7 +701,7 @@ function Home() {
                   <img src={item.ageRating} alt="Age Rating" />
                 </div>
                 <div className="add-to-watch-list">
-                  <img src="/svg/bookmark.svg" alt="Add to Watchlist" />
+                  <img src="/static/svg/bookmark.svg" alt="Add to Watchlist" />
                 </div>
                 <p id="title">{item.title}</p>
                 <h5>{item.subDub}</h5>
@@ -701,12 +711,12 @@ function Home() {
         </div>
         <img
           id="previous"
-          src="/svg/previous.svg"
+          src="/static/svg/previous.svg"
           onClick={() => handleNavigation(2, "previous")}
         />
         <img
           id="next"
-          src="/svg/next.svg"
+          src="/static/svg/next.svg"
           onClick={() => handleNavigation(2, "next")}
         />
       </div>

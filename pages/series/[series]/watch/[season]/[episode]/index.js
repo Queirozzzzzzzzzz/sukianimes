@@ -230,11 +230,17 @@ export default function Watch() {
 
   const updateVolumeIcon = () => {
     if (isMuted || volume <= 0) {
-      return <img className="volume-mute-icon" src="/svg/0-volume.svg" />;
+      return (
+        <img className="volume-mute-icon" src="/static/svg/0-volume.svg" />
+      );
     } else if (volume > 0 && volume <= 0.5) {
-      return <img className="volume-low-icon" src="/svg/50-volume.svg" />;
+      return (
+        <img className="volume-low-icon" src="/static/svg/50-volume.svg" />
+      );
     } else {
-      return <img className="volume-high-icon" src="/svg/100-volume.svg" />;
+      return (
+        <img className="volume-high-icon" src="/static/svg/100-volume.svg" />
+      );
     }
   };
 
@@ -553,9 +559,9 @@ export default function Watch() {
     <main>
       <div
         ref={videoContainerRef}
-        className={`series episode 
-        ${areCaptionsVisible ? "captions" : ""}  
-        ${isPlaying ? "" : "paused"} 
+        className={`series episode
+        ${areCaptionsVisible ? "captions" : ""}
+        ${isPlaying ? "" : "paused"}
         ${isFullScreen ? "full-screen" : ""}
         `}
         data-volume-level={isMuted ? "mute" : volume >= 0.5 ? "high" : "low"}
@@ -581,13 +587,13 @@ export default function Watch() {
             {isPlaying ? (
               <img
                 className="mobileBtn"
-                src="/svg/pause.svg"
+                src="/static/svg/pause.svg"
                 onClick={togglePlay}
               />
             ) : (
               <img
                 className="mobileBtn"
-                src="/svg/play.svg"
+                src="/static/svg/play.svg"
                 onClick={togglePlay}
               />
             )}
@@ -596,9 +602,9 @@ export default function Watch() {
             <div className="left">
               <button className="play-pause-btn" onClick={togglePlay}>
                 {isPlaying ? (
-                  <img className="paused-icon" src="/svg/pause.svg" />
+                  <img className="paused-icon" src="/static/svg/pause.svg" />
                 ) : (
-                  <img className="play-icon" src="/svg/play.svg" />
+                  <img className="play-icon" src="/static/svg/play.svg" />
                 )}
               </button>
               <div className="volume-container">
@@ -622,10 +628,10 @@ export default function Watch() {
                 /<div className="total-time">{formatDuration(duration)}</div>
               </div>
               <button className="backward-btn" onClick={handleSkipBackward}>
-                <img src="/svg/backward.svg" />
+                <img src="/static/svg/backward.svg" />
               </button>
               <button className="forward-btn" onClick={handleSkipForward}>
-                <img src="/svg/forward.svg" />
+                <img src="/static/svg/forward.svg" />
               </button>
             </div>
             <div className="right">
@@ -643,7 +649,7 @@ export default function Watch() {
                 <button className="sd-btn">480p</button>
               </div>
               <button className="captions-btn" onClick={toggleCaptions}>
-                <img src="/svg/caption.svg" />
+                <img src="/static/svg/caption.svg" />
               </button>
               <button className="speed-btn" onMouseDown={handleSpeedMouseDown}>
                 {playbackRate}x
@@ -660,8 +666,8 @@ export default function Watch() {
                   }`}
                   src={
                     isInPictureInPictureMode
-                      ? "/svg/picture-in-picture-out.svg"
-                      : "/svg/picture-in-picture-in.svg"
+                      ? "/static/svg/picture-in-picture-out.svg"
+                      : "/static/svg/picture-in-picture-in.svg"
                   }
                 />
               </button>
@@ -673,11 +679,11 @@ export default function Watch() {
               >
                 <img
                   className="full-screen-in-icon"
-                  src="/svg/full-screen-in.svg"
+                  src="/static/svg/full-screen-in.svg"
                 />
                 <img
                   className="full-screen-out-icon"
-                  src="/svg/full-screen-out.svg"
+                  src="/static/svg/full-screen-out.svg"
                 />
               </button>
             </div>
@@ -771,12 +777,12 @@ export default function Watch() {
           <a href="" className="preview">
             <img
               id="episode-preview"
-              src="/img/previews/series-sousou-no-frieren-preview-ep-7.webp"
+              src="/static/img/previews/series-sousou-no-frieren-preview-ep-7.webp"
             />
-            <img id="play-preview" src="/svg/play.svg" />
+            <img id="play-preview" src="/static/svg/play.svg" />
           </a>
           <button onClick="window.location.href=''">
-            <img src="/svg/play.svg" />
+            <img src="/static/svg/play.svg" />
             NEXT EPISODE S1 E7
           </button>
         </div>
@@ -803,7 +809,7 @@ export default function Watch() {
           <div className="comments-count">7 comments</div>
           <div id="spacement">|</div>
           <div className="filter" onClick={toggleOptions}>
-            <img src="/svg/filter.svg" alt="Filter icon" />
+            <img src="/static/svg/filter.svg" alt="Filter icon" />
             <div
               className="options"
               style={{ display: showOptions ? "block" : "none" }}
@@ -820,7 +826,7 @@ export default function Watch() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -839,15 +845,15 @@ export default function Watch() {
                 <p id="text">perfect</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -864,7 +870,7 @@ export default function Watch() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -883,15 +889,15 @@ export default function Watch() {
                 <p id="text">nice!</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -908,7 +914,7 @@ export default function Watch() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -927,15 +933,15 @@ export default function Watch() {
                 <p id="text">never get bored of the op</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -952,7 +958,7 @@ export default function Watch() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -971,15 +977,15 @@ export default function Watch() {
                 <p id="text">tbh, one of my favorite episodes</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -996,7 +1002,7 @@ export default function Watch() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -1015,15 +1021,15 @@ export default function Watch() {
                 <p id="text">ed gets better every episode</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -1040,7 +1046,7 @@ export default function Watch() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -1059,15 +1065,15 @@ export default function Watch() {
                 <p id="text">so chill</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -1084,7 +1090,7 @@ export default function Watch() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -1103,15 +1109,15 @@ export default function Watch() {
                 <p id="text">waiting for a bad episode</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>

@@ -77,19 +77,23 @@ export default function Series() {
         <div
           className="background-image"
           style={{
-            backgroundImage: 'url("/img/previews/series-preview-1.webp")',
+            backgroundImage:
+              'url("/static/img/previews/series-preview-1.webp")',
           }}
         ></div>
         <picture>
           <source
             media="(max-width: 600px)"
-            srcSet="/img/previews/series-preview-mobile-1.webp"
+            srcSet="/static/img/previews/series-preview-mobile-1.webp"
           />
           <source
             media="(min-width: 601px)"
-            srcSet="/img/previews/series-preview-1.webp"
+            srcSet="/static/img/previews/series-preview-1.webp"
           />
-          <img id="background-img" src="/img/previews/series-preview-1.webp" />
+          <img
+            id="background-img"
+            src="/static/img/previews/series-preview-1.webp"
+          />
         </picture>
       </div>
       <div className="series head">
@@ -120,11 +124,11 @@ export default function Series() {
           </div>
           <div className="actions">
             <button className="watch-list">
-              <img src="/svg/bookmark.svg" />
+              <img src="/static/svg/bookmark.svg" />
               WATCHLIST
             </button>
             <a href="" className="playlist">
-              <img src="/svg/add.svg" />
+              <img src="/static/svg/add.svg" />
               PLAYLIST
             </a>
           </div>
@@ -192,12 +196,12 @@ export default function Series() {
           <a href="/series/sousou-no-frieren/watch/1/6" className="preview">
             <img
               id="episode-preview"
-              src="/img/previews/series-sousou-no-frieren-preview-ep-6.webp"
+              src="/static/img/previews/series-sousou-no-frieren-preview-ep-6.webp"
             />
-            <img id="play-preview" src="/svg/play.svg" />
+            <img id="play-preview" src="/static/svg/play.svg" />
           </a>
           <button onClick={continueWatchingUrl}>
-            <img src="/svg/play.svg" />
+            <img src="/static/svg/play.svg" />
             CONTINUE WATCHING S1 E6
           </button>
         </div>
@@ -228,11 +232,11 @@ export default function Series() {
             <div className="image">
               <img
                 id="watched"
-                src="/img/previews/series-sousou-no-frieren-preview-ep-1.webp"
+                src="/static/img/previews/series-sousou-no-frieren-preview-ep-1.webp"
               />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">Watched</p>
               </div>
             </div>
@@ -246,11 +250,11 @@ export default function Series() {
             <div className="image">
               <img
                 id="watched"
-                src="/img/previews/series-sousou-no-frieren-preview-ep-2.webp"
+                src="/static/img/previews/series-sousou-no-frieren-preview-ep-2.webp"
               />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">Watched</p>
               </div>
             </div>
@@ -264,11 +268,11 @@ export default function Series() {
             <div className="image">
               <img
                 id="watched"
-                src="/img/previews/series-sousou-no-frieren-preview-ep-3.webp"
+                src="/static/img/previews/series-sousou-no-frieren-preview-ep-3.webp"
               />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">Watched</p>
               </div>
             </div>
@@ -282,11 +286,11 @@ export default function Series() {
             <div className="image">
               <img
                 id="watched"
-                src="/img/previews/series-sousou-no-frieren-preview-ep-4.webp"
+                src="/static/img/previews/series-sousou-no-frieren-preview-ep-4.webp"
               />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">Watched</p>
               </div>
             </div>
@@ -300,11 +304,11 @@ export default function Series() {
             <div className="image">
               <img
                 id="watched"
-                src="/img/previews/series-sousou-no-frieren-preview-ep-5.webp"
+                src="/static/img/previews/series-sousou-no-frieren-preview-ep-5.webp"
               />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">Watched</p>
               </div>
             </div>
@@ -319,10 +323,10 @@ export default function Series() {
             className="content-item"
           >
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-6.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-6.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">8m left</p>
               </div>
             </div>
@@ -334,10 +338,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-7.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-7.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -349,10 +353,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-8.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-8.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -364,10 +368,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-9.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-9.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -379,10 +383,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-10.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-10.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -394,10 +398,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-11.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-11.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -409,10 +413,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-12.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-12.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -424,10 +428,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-13.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-13.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -439,10 +443,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-14.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-14.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -454,10 +458,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-15.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-15.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -469,10 +473,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-16.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-16.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -484,10 +488,10 @@ export default function Series() {
           </a>
           <a href="" className="content-item">
             <div className="image">
-              <img src="/img/previews/series-sousou-no-frieren-preview-ep-17.webp" />
-              <img id="play-preview" src="/svg/play.svg" />
+              <img src="/static/img/previews/series-sousou-no-frieren-preview-ep-17.webp" />
+              <img id="play-preview" src="/static/svg/play.svg" />
               <div className="details">
-                <img id="age-rating" src="/svg/A12.svg" />
+                <img id="age-rating" src="/static/svg/A12.svg" />
                 <p id="video-length">24m</p>
               </div>
             </div>
@@ -524,7 +528,7 @@ export default function Series() {
           <div id="spacement">|</div>
           <div className="rating">9.4 (82k)</div>
           <div className="filter" onClick={toggleOptions}>
-            <img src="/svg/filter.svg" alt="Filter icon" />
+            <img src="/static/svg/filter.svg" alt="Filter icon" />
             <div
               className="options"
               style={{ display: showOptions ? "block" : "none" }}
@@ -541,7 +545,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -564,15 +568,15 @@ export default function Series() {
                 <p id="text">PERFECTTTTTTTT</p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>17</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -589,7 +593,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -615,15 +619,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -640,7 +644,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -666,15 +670,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -691,7 +695,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -717,15 +721,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -742,7 +746,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -768,15 +772,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -793,7 +797,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -818,15 +822,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -843,7 +847,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -869,15 +873,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -894,7 +898,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -920,15 +924,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -945,7 +949,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -971,15 +975,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>
@@ -996,7 +1000,7 @@ export default function Series() {
                 <a href="">
                   <img
                     id="logo"
-                    src="/img/previews/series-reviews-logo-1.webp"
+                    src="/static/img/previews/series-reviews-logo-1.webp"
                   />
                 </a>
               </div>
@@ -1021,15 +1025,15 @@ export default function Series() {
                 </p>
                 <div className="actions">
                   <div className="like">
-                    <img src="/svg/like.svg" />
+                    <img src="/static/svg/like.svg" />
                     <p>1</p>
                   </div>
                   <div className="dislike">
-                    <img src="/svg/dislike.svg" />
+                    <img src="/static/svg/dislike.svg" />
                     <p>0</p>
                   </div>
                   <div className="more">
-                    <img src="/svg/more.svg" />
+                    <img src="/static/svg/more.svg" />
                     <p>More</p>
                     <div className="options" style={{ display: "none" }}>
                       <p id="spoiler">It's a spoiler</p>

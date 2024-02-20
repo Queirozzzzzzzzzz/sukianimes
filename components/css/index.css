@@ -229,7 +229,7 @@ input[type="range"] {
 }
 
 .offer-upgrade .banner {
-  background-image: url("/img/offer-upgrade-banner.webp");
+  background-image: url("/static/img/offer-upgrade-banner.webp");
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -296,11 +296,11 @@ input[type="range"] {
 }
 
 .login-form {
-  background-image: url("/img/login-background-image.webp");
+  background-image: url("/static/img/login-background-image.webp");
 }
 
 .register-form {
-  background-image: url("/img/register-background-image.webp");
+  background-image: url("/static/img/register-background-image.webp");
 }
 
 .tecnical-form form {
@@ -1987,7 +1987,7 @@ a#watchlater:hover {
   /* OFFER UPGRADE */
 
   .offer-upgrade .banner {
-    background-image: url("/img/offer-upgrade-banner-mobile.webp");
+    background-image: url("/static/img/offer-upgrade-banner-mobile.webp");
   }
 
   .offer-upgrade .banner button {

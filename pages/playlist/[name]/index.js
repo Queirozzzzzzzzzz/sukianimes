@@ -20,19 +20,19 @@ export default function Playlist() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-1.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-1.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-1.webp"
+                  srcset="/static/img/previews/watchlater-preview-1.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-1.webp"
+                  src="/static/img/previews/watchlater-preview-1.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -49,7 +49,7 @@ export default function Playlist() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -61,19 +61,19 @@ export default function Playlist() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-3.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-3.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-3.webp"
+                  srcset="/static/img/previews/watchlater-preview-3.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-3.webp"
+                  src="/static/img/previews/watchlater-preview-3.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A10.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A10.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -90,7 +90,7 @@ export default function Playlist() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -102,19 +102,19 @@ export default function Playlist() {
               <picture>
                 <source
                   media="(max-width: 600px)"
-                  srcset="/img/previews/watchlater-preview-mobile-7.webp"
+                  srcset="/static/img/previews/watchlater-preview-mobile-7.webp"
                 />
                 <source
                   media="(min-width: 601px)"
-                  srcset="/img/previews/watchlater-preview-7.webp"
+                  srcset="/static/img/previews/watchlater-preview-7.webp"
                 />
                 <img
                   id="banner"
-                  src="/img/previews/watchlater-preview-7.webp"
+                  src="/static/img/previews/watchlater-preview-7.webp"
                 />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
             </div>
           </a>
           <div className="info">
@@ -131,7 +131,7 @@ export default function Playlist() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>

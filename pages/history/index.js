@@ -18,10 +18,13 @@ export default function History() {
           <a href="/series/sousou-no-frieren/watch/1/6">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-1.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-1.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">8m left</p>
             </div>
           </a>
@@ -38,7 +41,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -48,10 +51,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-2.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-2.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">14m left</p>
             </div>
           </a>
@@ -68,7 +74,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -78,10 +84,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-3.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-3.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">21m left</p>
             </div>
           </a>
@@ -98,7 +107,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -108,10 +117,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-4.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-4.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">10m left</p>
             </div>
           </a>
@@ -128,7 +140,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -138,10 +150,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-5.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-5.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">8m left</p>
             </div>
           </a>
@@ -158,7 +173,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -168,10 +183,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-6.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-6.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">17m left</p>
             </div>
           </a>
@@ -188,7 +206,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -198,10 +216,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-7.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-7.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">WATCHED</p>
             </div>
           </a>
@@ -218,7 +239,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -228,10 +249,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-8.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-8.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">WATCHED</p>
             </div>
           </a>
@@ -248,7 +272,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -258,10 +282,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-9.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-9.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">WATCHED</p>
             </div>
           </a>
@@ -278,7 +305,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>
@@ -288,10 +315,13 @@ export default function History() {
           <a href="">
             <div className="banner">
               <picture>
-                <img id="banner" src="/img/previews/history-preview-10.webp" />
+                <img
+                  id="banner"
+                  src="/static/img/previews/history-preview-10.webp"
+                />
               </picture>
-              <img id="age-rating" src="/svg/A12.svg" />
-              <img src="/svg/play.svg" id="play-img" />
+              <img id="age-rating" src="/static/svg/A12.svg" />
+              <img src="/static/svg/play.svg" id="play-img" />
               <p className="video-length">WATCHED</p>
             </div>
           </a>
@@ -308,7 +338,7 @@ export default function History() {
               </div>
               <div className="right">
                 <button>
-                  <img id="trash" src="/svg/trash.svg" />
+                  <img id="trash" src="/static/svg/trash.svg" />
                 </button>
               </div>
             </div>

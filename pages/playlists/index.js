@@ -21,10 +21,10 @@ export default function Playlists() {
           </a>
           <div className="right">
             <a href="" id="edit">
-              <img src="/svg/edit.svg" />
+              <img src="/static/svg/edit.svg" />
             </a>
             <a href="" id="trash">
-              <img src="/svg/trash.svg" />
+              <img src="/static/svg/trash.svg" />
             </a>
           </div>
         </div>
@@ -35,10 +35,10 @@ export default function Playlists() {
           </a>
           <div className="right">
             <a href="" id="edit">
-              <img src="/svg/edit.svg" />
+              <img src="/static/svg/edit.svg" />
             </a>
             <a href="" id="trash">
-              <img src="/svg/trash.svg" />
+              <img src="/static/svg/trash.svg" />
             </a>
           </div>
         </div>
@@ -49,10 +49,10 @@ export default function Playlists() {
           </a>
           <div className="right">
             <a href="" id="edit">
-              <img src="/svg/edit.svg" />
+              <img src="/static/svg/edit.svg" />
             </a>
             <a href="" id="trash">
-              <img src="/svg/trash.svg" />
+              <img src="/static/svg/trash.svg" />
             </a>
           </div>
         </div>
@@ -63,10 +63,10 @@ export default function Playlists() {
           </a>
           <div className="right">
             <a href="" id="edit">
-              <img src="/svg/edit.svg" />
+              <img src="/static/svg/edit.svg" />
             </a>
             <a href="" id="trash">
-              <img src="/svg/trash.svg" />
+              <img src="/static/svg/trash.svg" />
             </a>
           </div>
         </div>
