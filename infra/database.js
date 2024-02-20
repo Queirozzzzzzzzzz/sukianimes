@@ -22,36 +22,40 @@ async function query(queryObject) {
   }
 }
 
-async function checkConnection() {
+async function getVersion() {
   try {
-    const connection = await query("SELECT * from pg_stat_activity");
+    const connection = await query("SHOW server_version;");
     return connection;
   } catch (error) {
     console.log(error);
   }
 }
 
-async function getAccount(email) {
-  const account = await query({
-    text: `SELECT * FROM account WHERE email = $1;`,
-    values: [email],
-  });
-
-  return account;
+async function getOpenedConnections() {
+  try {
+    const databaseName = process.env.POSTGRES_DB;
+    const connection = await query({
+      text: "SELECT count(*)::int FROM pg_stat_activity WHERE datname = $1;",
+      values: [databaseName],
+    });
+    return connection;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-async function saveAccount(data) {
-  const account = await query({
-    text: `INSERT INTO account (accountname, email, password, created_at) VALUES ($1, $2, $3, $4) `,
-    values: [data.accountname, data.email, data.password, data.created_at],
-  });
-
-  return account;
+async function getMaxConnections() {
+  try {
+    const connection = await query("SHOW max_connections;");
+    return connection;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export default Object.freeze({
   query,
-  checkConnection,
-  getAccount,
-  saveAccount,
+  getVersion,
+  getMaxConnections,
+  getOpenedConnections,
 });
